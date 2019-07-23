@@ -12,11 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import team.pys.domain.User.User;
-import team.pys.domain.User.UserRepository;
-import team.pys.domain.board.Board;
-import team.pys.domain.board.BoardRepository;
-import team.pys.domain.enums.BoardType;
+import team.spy.domain.User.User;
+import team.spy.domain.User.UserRepository;
+import team.spy.domain.board.Board;
+import team.spy.domain.board.BoardRepository;
+import team.spy.domain.enums.BoardType;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

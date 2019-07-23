@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+</head>
+<body>
+	<h2>로그인</h2>
+	<button id="kakao" type="button">KAKAO</button>
+	<button id="facebook" type="button">FACEBOOK</button>
+	<button id="google" type="button">GOOGLE</button>
+	
+	
+	<script>
+		
+	var button = document.getElementById("kakao");
+	var button2 = document.getElementById("facebook");
+	var button3 = document.getElementById("google");
+	
+	button.onclick = function()
+	{
+	//	console.log('hello!');
+	//	var socialType = "kakao";
+		location.href = "/oauth2/authorization/kakao";
+	}
+	
+	button2.onclick = function()
+	{
+		//location.href = "/oauth2/authorization/facebook";
+		location.href = "/boards/list";
+	}
+	
+	button3.onclick = function()
+	{
+	//	console.log('hello!');
+	//	var socialType = "kakao";
+		location.href = "/oauth2/authorization/google";
+	}
+	</script>
+</body>
+</html>

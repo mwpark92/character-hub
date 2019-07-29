@@ -24,9 +24,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
-import team.spy.domain.User.User;
-import team.spy.domain.User.UserRepository;
 import team.spy.domain.User.annotation.SocialUser;
+import team.spy.domain.User.dto.User;
+import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.enums.SocialType;
 
 @Component
@@ -92,7 +92,7 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver{
 
     private User getModernUser(SocialType socialType, Map<String, Object> map) {
         return User.builder()
-                .name(String.valueOf(map.get("name")))
+                .nickname(String.valueOf(map.get("name")))
                 .email(String.valueOf(map.get("email")))
                 .pincipal(String.valueOf(map.get("id")))
                 .socialType(socialType)
@@ -108,7 +108,7 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver{
         String id = (String) map.get("id");
     	System.out.println("id : " + id);
         return User.builder()
-                .name(propertyMap.get("nickname"))
+                .nickname(propertyMap.get("nickname"))
                 .email(String.valueOf(map.get("kaccount_email")))
                 .pincipal(id)
                 .socialType(KAKAO)

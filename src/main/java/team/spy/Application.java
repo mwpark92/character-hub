@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import team.spy.domain.User.User;
-import team.spy.domain.User.UserRepository;
+import team.spy.domain.User.dto.User;
+import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.User.resolve.UserArgumentResolver;
 import team.spy.domain.board.Board;
 import team.spy.domain.board.BoardRepository;
@@ -49,8 +49,9 @@ public class Application implements WebMvcConfigurer{
 		
 		
 		return (args) -> {
+			
 			User user = userRepository.save(User.builder()
-					.name("ykh")
+					.nickname("ykh")
 					.password("ykh")
 					.email("ykh@gmail.com")
 					.createDate(LocalDateTime.now())
@@ -60,14 +61,15 @@ public class Application implements WebMvcConfigurer{
 			IntStream.rangeClosed(1, 200).forEach(index ->
 					boardRepository.save(Board.builder()
 							.title("title" + index)
-							.subTitle("sub" + index)
 							.content("contents")
 							.boardType(BoardType.FREE)
-							.createTime(LocalDateTime.now())
+							.createDate(LocalDateTime.now())
 							.updateDate(LocalDateTime.now())
 							.user(user).build()
 							));
 		};
 	}
+	
+	
 
 }

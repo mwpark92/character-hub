@@ -1,4 +1,5 @@
 
+
 spring:
 #  datasource:
 #    url: jdbc:mysql://
@@ -13,6 +14,11 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+    properties: 
+      hibernate: 
+        show_sql: true
+        format_sql: true
+        new_generator_mappings: true
   h2:
     console:
       enabled: true
@@ -27,6 +33,8 @@ spring:
           facebook:
             client-id: 2424884084415109
             client-secret: 3c29f4d653ee155a9d0e3d17b247dc55
+
+
             
 custom: 
   oauth2: 

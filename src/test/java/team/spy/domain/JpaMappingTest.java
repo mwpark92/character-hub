@@ -1,25 +1,21 @@
-package team.pys.domain;
-
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+package team.spy.domain;
 
 import java.time.LocalDateTime;
 
 import org.junit.Before;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import team.spy.domain.User.User;
-import team.spy.domain.User.UserRepository;
+import team.spy.domain.User.dto.User;
+import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.board.Board;
 import team.spy.domain.board.BoardRepository;
 import team.spy.domain.enums.BoardType;
 
 @RunWith(SpringRunner.class)
-@DataJpaTest
+@SpringBootTest
 public class JpaMappingTest {
 
 	private final String boardName = "Test";
@@ -30,12 +26,13 @@ public class JpaMappingTest {
 	
 	@Autowired
 	BoardRepository boardRepository;
+
 	
 	@Before
 	public void init()
 	{
 		User user = userRepository.save(User.builder()
-				.name("ykh")
+				.nickname("ykh")
 				.password("ykh")
 				.email(email)
 				.createDate(LocalDateTime.now())
@@ -43,25 +40,22 @@ public class JpaMappingTest {
 		
 		boardRepository.save(Board.builder()
 				.title(boardName)
-				.subTitle("sub")
 				.content("contents")
 				.boardType(BoardType.FREE)
-				.createTime(LocalDateTime.now())
+				.createDate(LocalDateTime.now())
 				.updateDate(LocalDateTime.now())
 				.user(user)
 				.build());
 	}
 	
-	@Test
-	public void test()
-	{
-		User user = userRepository.findByEmail(email);
-		assertThat(user.getName(), is("ykh"));
-		assertThat(user.getPassword(), is("ykh"));
-		
-		Board board = boardRepository.findByUser(user);
-		assertThat(board.getTitle(), is(boardName));
-		
-	}
-	
+//	@Test
+//	public void jpaTest()
+//	{
+//		User user = userRepository.findByEmail(email);
+//		assertThat(user.getNickname(), is("ykh"));
+//		assertThat(user.getPassword(), is("ykh"));
+//		
+//		Board board = boardRepository.findByUser(user);
+//		assertThat(board.getTitle(), is(boardName));	
+//	}
 }

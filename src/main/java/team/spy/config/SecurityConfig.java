@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.configuration.EnableGlobalAuthentication;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -13,6 +15,9 @@ import org.springframework.security.oauth2.client.registration.ClientRegistratio
 import org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
 import org.springframework.security.web.csrf.CsrfFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
 import team.spy.domain.enums.SocialType;
@@ -23,21 +28,30 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Configuration
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
+		CorsConfiguration configuration = new CorsConfiguration();
+		configuration.addAllowedOrigin(CorsConfiguration.ALL);
+		configuration.addAllowedMethod(CorsConfiguration.ALL);
+		configuration.addAllowedHeader(CorsConfiguration.ALL);
+		
+		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		source.registerCorsConfiguration("/**", configuration);
+		
 		CharacterEncodingFilter filter = new CharacterEncodingFilter();
         
 		http
-        .authorizeRequests()
-            .antMatchers("/", "/oauth2/**", "/login/**",  "/css/**", "/images/**", "/js/**", "/console/**").permitAll()
-            .antMatchers("/facebook").hasAuthority(SocialType.FACEBOOK.getRoleType())
-            .antMatchers("/google").hasAuthority(SocialType.GOOGLE.getRoleType())
-//            .antMatchers("/kakao").hasAuthority(SocialType.KAKAO.getRoleType())
-            .anyRequest().authenticated()
+				.authorizeRequests()
+	            .antMatchers("/", "/oauth2/**", "/login/**",  "/css/**", "/images/**", "/js/**", "/console/**").permitAll()
+	            .antMatchers("/facebook").hasAuthority(SocialType.FACEBOOK.getRoleType())
+	            .antMatchers("/google").hasAuthority(SocialType.GOOGLE.getRoleType())
+	//            .antMatchers("/kakao").hasAuthority(SocialType.KAKAO.getRoleType())
+	            .anyRequest().authenticated()
             .and()
                 .oauth2Login()
                 .defaultSuccessUrl("/loginsucess")
@@ -57,9 +71,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .deleteCookies("JSESSIONID")
                 .invalidateHttpSession(true)
             .and()
+            	.cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues())
+            .and()
                 .addFilterBefore(filter, CsrfFilter.class)
                 .csrf().disable();
-		
 	}
 	
 	@Bean

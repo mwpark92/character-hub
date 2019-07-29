@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -17,14 +19,14 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import team.spy.domain.User.User;
+import team.spy.domain.User.dto.User;
 import team.spy.domain.enums.BoardType;
 
 @ToString
 @Getter
 @NoArgsConstructor
 @Entity
-@Table
+@Table(name = "T_Board")
 public class Board{
 
 
@@ -37,9 +39,6 @@ public class Board{
 	private String title;
 	
 	@Column
-	private String subTitle;
-	
-	@Column
 	private String content;
 	
 	@Column
@@ -47,25 +46,32 @@ public class Board{
 	private BoardType boardType;
 	
 	@Column
-	private LocalDateTime createTime;
+	private LocalDateTime createDate;
 	
 	@Column
 	private LocalDateTime updateDate;
 	
-	@OneToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
 	private User user;
 	
 	@Builder
-	public Board(String title, String subTitle, String content, BoardType boardType,
-			LocalDateTime createTime, LocalDateTime updateDate, User user)
+	public Board(String title, String content, BoardType boardType,
+			LocalDateTime createDate, LocalDateTime updateDate, User user)
 	{
 		this.title = title;
-		this.subTitle = subTitle;
 		this.content = content;
 		this.boardType = boardType;
-		this.createTime = createTime;
+		this.createDate = createDate;
 		this.updateDate = updateDate;
 		this.user = user;
+	}
+	
+	public void Update(Board board)
+	{
+		this.title = board.title;
+		this.content = board.content;
+		this.boardType = board.boardType;
+		this.updateDate = LocalDateTime.now();
 	}
 	
 }

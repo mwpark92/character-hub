@@ -15,8 +15,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import team.spy.domain.User.dto.User;
 import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.User.resolve.UserArgumentResolver;
-import team.spy.domain.board.Board;
-import team.spy.domain.board.BoardRepository;
+import team.spy.domain.board.dto.CommonBoard;
+import team.spy.domain.board.repository.CommonBoardRepository;
 import team.spy.domain.enums.BoardType;
 
 @SpringBootApplication
@@ -35,7 +35,7 @@ public class Application implements WebMvcConfigurer{
 	}
 	
 	@Bean
-	public CommandLineRunner runner(UserRepository userRepository, BoardRepository boardRepository) throws Exception
+	public CommandLineRunner runner(UserRepository userRepository, CommonBoardRepository boardRepository) throws Exception
 	{
 		// 이렇게 구현된 Method는 return value에서lambda 식도 가능!
 //		new CommandLineRunner() {
@@ -59,7 +59,7 @@ public class Application implements WebMvcConfigurer{
 			
 			
 			IntStream.rangeClosed(1, 200).forEach(index ->
-					boardRepository.save(Board.builder()
+					boardRepository.save(CommonBoard.builder()
 							.title("title" + index)
 							.content("contents")
 							.boardType(BoardType.FREE)

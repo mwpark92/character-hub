@@ -1,32 +1,27 @@
-package team.spy.domain.board;
+package team.spy.domain.board.dto;
 
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.MappedSuperclass;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import team.spy.domain.User.dto.User;
 import team.spy.domain.enums.BoardType;
 
 @ToString
-@Getter
+@Data
 @NoArgsConstructor
-@Entity
-@Table(name = "T_Board")
+@MappedSuperclass
 public class Board{
 
 
@@ -54,23 +49,25 @@ public class Board{
 	@ManyToOne(fetch = FetchType.LAZY)
 	private User user;
 	
-	@Builder
+	// private Tag tag;
+	
+	
 	public Board(String title, String content, BoardType boardType,
 			LocalDateTime createDate, LocalDateTime updateDate, User user)
 	{
 		this.title = title;
 		this.content = content;
-		this.boardType = boardType;
+//		this.boardType = boardType;
 		this.createDate = createDate;
 		this.updateDate = updateDate;
 		this.user = user;
 	}
 	
-	public void Update(Board board)
+	public void update(Board board)
 	{
 		this.title = board.title;
 		this.content = board.content;
-		this.boardType = board.boardType;
+//		this.boardType = board.boardType;
 		this.updateDate = LocalDateTime.now();
 	}
 	

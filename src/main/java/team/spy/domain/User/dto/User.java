@@ -19,7 +19,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import team.spy.domain.board.Board;
+import team.spy.domain.board.dto.Board;
 import team.spy.domain.enums.SocialType;
 
 

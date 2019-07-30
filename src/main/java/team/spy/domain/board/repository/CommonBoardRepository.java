@@ -1,15 +1,16 @@
-package team.spy.domain.board;
+package team.spy.domain.board.repository;
 
 import java.util.List;
 
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import team.spy.domain.User.dto.User;
+import team.spy.domain.board.dto.CommonBoard;
 
-public interface BoardRepository extends JpaRepository<Board, Long>{
-	Board findByUser(User user);
+public interface CommonBoardRepository extends JpaRepository<CommonBoard, Long>{
+	CommonBoard findByUser(User user);
 	
 	@Query("select "
 //			+ "b.idx "
@@ -18,9 +19,8 @@ public interface BoardRepository extends JpaRepository<Board, Long>{
 			+ ",b.createDate "
 			+ ",b.updateDate "
 			+ ",u.nickname "
-		   + "from Board b "
+		   + "from CommonBoard b "
 		   +"inner join b.user u "
-		  )//+ "where b.idx = :idx")
-//	List<Board> findBoardListByQuery(@Param("idx") Long idx); 
-	List<Object> findBoardListByQuery(); 
+		  ) 
+	List<Object[]> findBoardListByQuery(Pageable pageable); 
 }

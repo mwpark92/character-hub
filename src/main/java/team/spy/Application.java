@@ -17,6 +17,8 @@ import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.User.resolve.UserArgumentResolver;
 import team.spy.domain.board.dto.CommonBoard;
 import team.spy.domain.board.repository.CommonBoardRepository;
+import team.spy.domain.common.dto.Count;
+import team.spy.domain.common.dto.CountProjectId;
 import team.spy.domain.enums.BoardType;
 
 @SpringBootApplication
@@ -58,6 +60,7 @@ public class Application implements WebMvcConfigurer{
 					.build());
 			
 			
+			
 			IntStream.rangeClosed(1, 200).forEach(index ->
 					boardRepository.save(CommonBoard.builder()
 							.title("title" + index)
@@ -65,7 +68,8 @@ public class Application implements WebMvcConfigurer{
 							.boardType(BoardType.FREE)
 							.createDate(LocalDateTime.now())
 							.updateDate(LocalDateTime.now())
-							.user(user).build()
+							.user(user)
+							.build()
 							));
 		};
 	}

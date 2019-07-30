@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import team.spy.domain.User.dto.User;
+import team.spy.domain.common.dto.Count;
 import team.spy.domain.enums.BoardType;
 
 

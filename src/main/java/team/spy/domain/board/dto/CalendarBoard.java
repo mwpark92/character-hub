@@ -1,5 +1,6 @@
 package team.spy.domain.board.dto;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -11,6 +12,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import team.spy.domain.User.dto.User;
+import team.spy.domain.common.dto.Count;
 import team.spy.domain.enums.BoardType;
 
 @ToString
@@ -27,15 +29,15 @@ public class CalendarBoard extends Board{
 	private String address;
 	
 	@Column
-	private LocalDateTime startDate;
+	private LocalDate startDate;
 	
 	@Column
-	private LocalDateTime endDate;
+	private LocalDate endDate;
 
 	@Builder
 	public CalendarBoard(String title, String content, BoardType boardType,
 			LocalDateTime createDate, LocalDateTime updateDate, User user,
-			String homepage, String address, LocalDateTime startDate, LocalDateTime endDate)
+			String homepage, String address, LocalDate startDate, LocalDate endDate)
 	{
 		super(title, content, boardType, createDate, updateDate, user);
 		this.homepage = homepage;

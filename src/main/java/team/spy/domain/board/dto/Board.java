@@ -11,18 +11,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.OneToOne;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import team.spy.domain.User.dto.User;
+import team.spy.domain.common.dto.Count;
 import team.spy.domain.enums.BoardType;
 
 @ToString
 @Data
 @NoArgsConstructor
 @MappedSuperclass
-public class Board{
+public abstract class Board{
 
 
 	@Id
@@ -50,6 +52,9 @@ public class Board{
 	private User user;
 	
 	// private Tag tag;
+	
+	@OneToOne
+	private Count count;
 	
 	
 	public Board(String title, String content, BoardType boardType,

@@ -59,7 +59,7 @@ public class CommonBoardService {
 		return boardList; 
 	}
 	
-	public CommonBoard findBoardByBoardIdx(Long idx)
+	public CommonBoard findBoardByIdx(Long idx)
 	{
 		return boardRepository.findById(idx).orElse(new CommonBoard());
 	}

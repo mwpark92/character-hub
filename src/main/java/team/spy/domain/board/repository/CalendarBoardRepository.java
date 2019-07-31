@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 
 import team.spy.domain.User.dto.User;
 import team.spy.domain.board.dto.CalendarBoard;
-import team.spy.domain.board.dto.CommonBoard;
 
 public interface CalendarBoardRepository extends JpaRepository<CalendarBoard, Long>{
 	CalendarBoard findByUser(User user);

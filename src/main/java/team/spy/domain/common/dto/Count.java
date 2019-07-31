@@ -20,16 +20,20 @@ import lombok.ToString;
 public class Count {
 	
 	@EmbeddedId
-	private CountProjectId idx;
+	private CountProjectId countProjectId;
 	
 	@ColumnDefault("0")
 	private int count;
 	
 	@Builder
-	public Count(CountProjectId idx, int count)
+	public Count(CountProjectId countProjectId, int count)
 	{
-		this.idx = idx;
+		this.countProjectId = countProjectId;
 		this.count = count;
 	}
 
+	public void increaseCount()
+	{
+		count = count + 1;
+	}
 }

@@ -43,7 +43,7 @@ public class BoardController {
 	@RequestMapping(value = "/{idx}", method=RequestMethod.GET)
 	public Board board(@PathVariable(value = "idx") Long idx)
 	{
-		return boardService.findBoardByBoardIdx(idx);
+		return boardService.findBoardByIdx(idx);
 	}
 	
 	@RequestMapping(method=RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)

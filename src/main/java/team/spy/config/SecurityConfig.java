@@ -56,8 +56,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .oauth2Login()
                 .defaultSuccessUrl("/loginsucess")
                 .failureUrl("/loginfailure")
-//            .and()
-//                .headers().frameOptions().disable()
+            .and()
+                .headers().frameOptions().disable()
             .and()
                 .exceptionHandling()
                 .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/login"))
@@ -76,6 +76,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .addFilterBefore(filter, CsrfFilter.class)
                 .csrf().disable();
 	}
+	
+	
 	
 	@Bean
 	public ClientRegistrationRepository clientRegistrationRepository(OAuth2ClientProperties oAuth2ClientProperties, 

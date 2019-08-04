@@ -34,8 +34,13 @@ spring:
             client-id: 1
             client-secret: 1
 
-
-            
+logging: 
+  level: 
+    root: warn
+  file: 
+    path: 
+    
+                
 custom: 
   oauth2: 
     kakao: 

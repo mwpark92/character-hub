@@ -1,4 +1,4 @@
-package team.spy.domain.board.dto;
+package team.spy.domain.board.entity;
 
 import java.time.LocalDateTime;
 

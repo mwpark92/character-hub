@@ -1,5 +1,6 @@
 package team.spy;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -16,13 +17,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import team.spy.domain.User.dto.User;
 import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.User.resolve.UserArgumentResolver;
-import team.spy.domain.board.dto.CommonBoard;
-import team.spy.domain.board.repository.CommonBoardRepository;
-import team.spy.domain.common.dto.Count;
-import team.spy.domain.common.dto.CountProjectId;
+import team.spy.domain.board.entity.Board;
+import team.spy.domain.board.entity.Calendar;
+import team.spy.domain.board.repository.BoardRepository;
 import team.spy.domain.enums.BoardType;
 
-@EnableCaching
+//@EnableCaching
 @SpringBootApplication
 public class Application implements WebMvcConfigurer{
 
@@ -39,7 +39,7 @@ public class Application implements WebMvcConfigurer{
 	}
 	
 	@Bean
-	public CommandLineRunner runner(UserRepository userRepository, CommonBoardRepository boardRepository) throws Exception
+	public CommandLineRunner runner(UserRepository userRepository, BoardRepository boardRepository) throws Exception
 	{
 		// 이렇게 구현된 Method는 return value에서lambda 식도 가능!
 //		new CommandLineRunner() {
@@ -61,18 +61,20 @@ public class Application implements WebMvcConfigurer{
 					.createDate(LocalDateTime.now())
 					.build());
 			
+			IntStream.rangeClosed(1, 200).forEach(index -> {
 			
+			Board board = Board.builder()
+				.title("title" + index)
+				.content("contents")
+				.boardType(BoardType.FREE)
+				.createDate(LocalDateTime.now())
+				.updateDate(LocalDateTime.now())
+				.user(user.getIdx())
+				.build();
 			
-			IntStream.rangeClosed(1, 200).forEach(index ->
-					boardRepository.save(CommonBoard.builder()
-							.title("title" + index)
-							.content("contents")
-							.boardType(BoardType.FREE)
-							.createDate(LocalDateTime.now())
-							.updateDate(LocalDateTime.now())
-							.user(user)
-							.build()
-							));
+			board.setCalendar(new Calendar("index : " + index, "address", LocalDate.now(), LocalDate.now()));
+			boardRepository.save(board);
+			});
 		};
 	}
 	

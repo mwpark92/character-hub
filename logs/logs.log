@@ -1,0 +1,572 @@
+[2019-08-01 13:41:26:542438][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16024 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:41:26:542439][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:41:26:542439][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:41:27:543205][restartedMain] INFO  team.spy.Application - Started Application in 0.794 seconds (JVM running for 543.573)
+[2019-08-01 13:41:33:548788][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16024 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:41:33:548789][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:41:35:613][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16214 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:41:35:615][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:41:40:5438][restartedMain] INFO  team.spy.Application - Started Application in 5.227 seconds (JVM running for 5.782)
+[2019-08-01 13:42:55:36083][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:42:55:36083][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:42:55:36083][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:42:56:37355][restartedMain] INFO  team.spy.Application - Started Application in 1.325 seconds (JVM running for 37.731)
+[2019-08-01 13:43:08:49009][http-nio-8080-exec-1] DEBUG t.s.d.board.service.BoardService - list : [Ljava.lang.Object;@b1277dae
+[2019-08-01 13:44:00:101201][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:44:00:101201][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:44:00:101201][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:44:01:102218][restartedMain] INFO  team.spy.Application - Started Application in 1.058 seconds (JVM running for 102.594)
+[2019-08-01 13:44:21:122536][http-nio-8080-exec-1] DEBUG t.s.d.board.service.BoardService - list : [Ljava.lang.Object;@8c0af14a
+[2019-08-01 13:45:19:180071][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:45:19:180072][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:45:19:180073][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:45:20:181051][restartedMain] INFO  team.spy.Application - Started Application in 1.029 seconds (JVM running for 181.427)
+[2019-08-01 13:45:23:184624][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - list : [Ljava.lang.Object;@9418eeef
+[2019-08-01 13:46:23:243867][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:46:23:243867][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:46:23:243867][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:46:23:244725][restartedMain] INFO  team.spy.Application - Started Application in 0.9 seconds (JVM running for 245.101)
+[2019-08-01 13:47:19:300486][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:47:19:300487][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:47:19:300487][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:47:20:301329][restartedMain] INFO  team.spy.Application - Started Application in 0.882 seconds (JVM running for 301.705)
+[2019-08-01 13:47:24:304899][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:47:24:304899][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:47:24:304899][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:47:24:305661][restartedMain] INFO  team.spy.Application - Started Application in 0.786 seconds (JVM running for 306.037)
+[2019-08-01 13:48:04:345353][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:48:04:345354][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:48:04:345354][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:48:05:346132][restartedMain] INFO  team.spy.Application - Started Application in 0.808 seconds (JVM running for 346.508)
+[2019-08-01 13:48:18:359743][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:48:18:359743][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:48:18:359743][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:48:19:360466][restartedMain] INFO  team.spy.Application - Started Application in 0.747 seconds (JVM running for 360.842)
+[2019-08-01 13:48:56:397161][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:48:56:397161][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:48:56:397161][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:48:57:397867][restartedMain] INFO  team.spy.Application - Started Application in 0.745 seconds (JVM running for 398.243)
+[2019-08-01 13:49:05:406463][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:49:05:406463][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:49:05:406464][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:49:06:407140][restartedMain] INFO  team.spy.Application - Started Application in 0.701 seconds (JVM running for 407.516)
+[2019-08-01 13:49:10:411696][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:49:10:411697][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:49:10:411697][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:49:11:412349][restartedMain] INFO  team.spy.Application - Started Application in 0.678 seconds (JVM running for 412.725)
+[2019-08-01 13:49:19:419951][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:49:19:419952][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:49:19:419952][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:49:19:420645][restartedMain] INFO  team.spy.Application - Started Application in 0.721 seconds (JVM running for 421.021)
+[2019-08-01 13:49:22:423189][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:49:22:423189][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:49:22:423189][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:49:23:423900][restartedMain] INFO  team.spy.Application - Started Application in 0.735 seconds (JVM running for 424.276)
+[2019-08-01 13:50:01:462634][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16216 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:50:01:462635][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:50:01:462635][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:50:02:463268][restartedMain] INFO  team.spy.Application - Started Application in 0.666 seconds (JVM running for 463.644)
+[2019-08-01 13:50:12:653][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:50:12:655][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:50:12:655][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:50:17:5360][restartedMain] INFO  team.spy.Application - Started Application in 5.12 seconds (JVM running for 5.713)
+[2019-08-01 13:50:29:17051][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listSize : 10
+[2019-08-01 13:50:29:17052][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:50:29:17053][http-nio-8080-exec-2] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard()
+[2019-08-01 13:51:06:55026][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:51:06:55027][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:51:06:55027][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:51:08:56305][restartedMain] INFO  team.spy.Application - Started Application in 1.322 seconds (JVM running for 56.658)
+[2019-08-01 13:51:19:67856][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:51:19:67856][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:51:19:67856][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:51:20:68914][restartedMain] INFO  team.spy.Application - Started Application in 1.092 seconds (JVM running for 69.267)
+[2019-08-01 13:51:25:73472][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:51:25:73473][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:51:25:73473][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:51:26:74355][restartedMain] INFO  team.spy.Application - Started Application in 0.923 seconds (JVM running for 74.708)
+[2019-08-01 13:51:38:86927][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:51:38:86927][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:51:38:86927][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:51:39:87781][restartedMain] INFO  team.spy.Application - Started Application in 0.883 seconds (JVM running for 88.134)
+[2019-08-01 13:51:58:106427][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:51:58:106428][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:51:58:106428][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:51:59:107242][restartedMain] INFO  team.spy.Application - Started Application in 0.849 seconds (JVM running for 107.595)
+[2019-08-01 13:52:11:119750][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listSize : 10
+[2019-08-01 13:52:11:119750][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title1, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.214, getUpdateDate()=2019-08-01T13:51:59.214, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-400652015, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title2, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.216, getUpdateDate()=2019-08-01T13:51:59.216, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-1455558197, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title3, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.217, getUpdateDate()=2019-08-01T13:51:59.217, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=833631680, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title4, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.217, getUpdateDate()=2019-08-01T13:51:59.217, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-277727502, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title5, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.218, getUpdateDate()=2019-08-01T13:51:59.218, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-796795417, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title6, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.218, getUpdateDate()=2019-08-01T13:51:59.218, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=466583092, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title7, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.219, getUpdateDate()=2019-08-01T13:51:59.219, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-1350852910, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title8, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.220, getUpdateDate()=2019-08-01T13:51:59.220, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-1801935547, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title9, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.220, getUpdateDate()=2019-08-01T13:51:59.220, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1298256429, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:52:11:119751][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title10, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:51:59.221, getUpdateDate()=2019-08-01T13:51:59.221, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-1004492513, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:55:13:301553][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:55:13:301553][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:55:13:301553][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:55:27:315593][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:55:27:315593][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:55:27:315593][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:55:28:316431][restartedMain] INFO  team.spy.Application - Started Application in 0.867 seconds (JVM running for 316.784)
+[2019-08-01 13:55:36:325007][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16430 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:55:36:325008][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:55:36:325008][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:55:37:325748][restartedMain] INFO  team.spy.Application - Started Application in 0.773 seconds (JVM running for 326.101)
+[2019-08-01 13:55:46:615][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:55:46:617][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:55:46:618][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:55:51:5331][restartedMain] INFO  team.spy.Application - Started Application in 5.142 seconds (JVM running for 5.691)
+[2019-08-01 13:56:32:45825][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listSize : 10
+[2019-08-01 13:56:32:45826][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title1, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.741, getUpdateDate()=2019-08-01T13:55:51.741, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=351161383, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45826][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title2, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.745, getUpdateDate()=2019-08-01T13:55:51.745, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-849107877, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45826][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title3, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.746, getUpdateDate()=2019-08-01T13:55:51.746, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=677907894, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title4, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.747, getUpdateDate()=2019-08-01T13:55:51.747, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1773434366, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title5, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.748, getUpdateDate()=2019-08-01T13:55:51.748, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=178424793, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title6, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.749, getUpdateDate()=2019-08-01T13:55:51.749, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-1593185409, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title7, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.750, getUpdateDate()=2019-08-01T13:55:51.750, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-743292634, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title8, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.751, getUpdateDate()=2019-08-01T13:55:51.751, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=774626243, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title9, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.752, getUpdateDate()=2019-08-01T13:55:51.752, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-191703891, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:56:32:45827][http-nio-8080-exec-3] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title10, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:55:51.753, getUpdateDate()=2019-08-01T13:55:51.753, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-501007452, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:09:83147][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 13:57:09:83147][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 13:57:09:83147][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 13:57:10:84519][restartedMain] INFO  team.spy.Application - Started Application in 1.422 seconds (JVM running for 84.879)
+[2019-08-01 13:57:17:91577][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listSize : 10
+[2019-08-01 13:57:17:91577][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title1, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.895, getUpdateDate()=2019-08-01T13:57:10.895, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=2073334111, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91577][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title2, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.899, getUpdateDate()=2019-08-01T13:57:10.899, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-1684133459, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title3, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.901, getUpdateDate()=2019-08-01T13:57:10.901, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1139598104, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title4, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.902, getUpdateDate()=2019-08-01T13:57:10.902, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1412310832, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title5, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.903, getUpdateDate()=2019-08-01T13:57:10.903, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1586857978, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title6, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.905, getUpdateDate()=2019-08-01T13:57:10.905, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-634818702, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title7, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.906, getUpdateDate()=2019-08-01T13:57:10.906, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=-2021872581, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title8, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.907, getUpdateDate()=2019-08-01T13:57:10.907, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1023348064, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title9, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.908, getUpdateDate()=2019-08-01T13:57:10.908, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=406980032, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 13:57:17:91578][http-nio-8080-exec-1] DEBUG team.spy.domain.board.service.BoardService - listValue : CommonBoard [ getIdx()=null, getTitle()=title10, getContent()=null, getBoardType()=null, getCreateDate()=2019-08-01T13:57:10.909, getUpdateDate()=2019-08-01T13:57:10.909, getUser()=User(idx=null, nickname=ykh, userid=null, password=null, email=null, pincipal=null, socialType=null, createDate=null, updateDate=null, permission=null), hashCode()=1531651360, getClass()=class team.spy.domain.board.dto.CommonBoard]
+[2019-08-01 14:03:36:469709][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:03:36:469710][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:03:36:469710][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:03:37:470771][restartedMain] INFO  team.spy.Application - Started Application in 1.108 seconds (JVM running for 471.131)
+[2019-08-01 14:08:11:745426][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:08:11:745427][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:08:11:745427][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:08:12:746368][restartedMain] INFO  team.spy.Application - Started Application in 0.978 seconds (JVM running for 746.728)
+[2019-08-01 14:08:20:753938][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:08:20:753939][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:08:20:753939][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:08:21:754833][restartedMain] INFO  team.spy.Application - Started Application in 0.921 seconds (JVM running for 755.193)
+[2019-08-01 14:08:54:788505][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:08:54:788505][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:08:54:788505][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:09:27:820743][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:09:27:820744][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:09:27:820744][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:10:55:909178][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:10:55:909178][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:10:55:909178][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:11:25:939356][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:11:25:939357][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:11:25:939357][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:11:46:960500][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:11:46:960500][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:11:46:960500][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:12:13:987626][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:12:13:987626][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:12:13:987626][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:12:55:1028888][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:12:55:1028888][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:12:55:1028888][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:13:03:1036896][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:13:03:1036897][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:13:03:1036897][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:13:09:1042934][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:13:09:1042934][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:13:09:1042934][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:13:13:1046951][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:13:13:1046952][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:13:13:1046952][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:13:17:1051056][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:13:17:1051056][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:13:17:1051056][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:13:27:1061567][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:13:27:1061567][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:13:27:1061567][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:13:45:1079626][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:13:45:1079626][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:13:45:1079626][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:14:02:1095684][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:14:02:1095684][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:14:02:1095684][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:15:35:1189058][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:15:35:1189059][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:15:35:1189059][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:16:05:1219139][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:16:05:1219139][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:16:05:1219139][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:21:05:1519384][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:21:05:1519384][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:21:05:1519384][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:21:07:1521344][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:21:07:1521344][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:21:07:1521344][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:21:42:1556464][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:21:42:1556464][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:21:42:1556464][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:21:53:1567462][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:21:53:1567462][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:21:53:1567462][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:22:01:1575537][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:22:01:1575537][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:22:01:1575537][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:22:13:1587538][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:22:13:1587538][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:22:13:1587538][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:22:17:1591504][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:22:17:1591504][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:22:17:1591504][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:27:48:1921893][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:27:48:1921893][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:27:48:1921893][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:27:52:1925852][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:27:52:1925852][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:27:52:1925852][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:29:20:2014161][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:29:20:2014161][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:29:20:2014161][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:31:13:2127566][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:31:13:2127567][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:31:13:2127567][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:31:22:2136527][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:31:22:2136527][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:31:22:2136527][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:31:34:2148523][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:31:34:2148524][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:31:34:2148524][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:33:08:2241836][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:33:08:2241836][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:33:08:2241836][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:33:20:2253801][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:33:20:2253802][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:33:20:2253802][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:33:41:2274844][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:33:41:2274844][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:33:41:2274844][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:34:37:2330998][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:34:37:2330998][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:34:37:2330998][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:34:45:2338955][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:34:45:2338955][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:34:45:2338955][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:35:08:2361979][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:35:08:2361979][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:35:08:2361979][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:35:11:2364915][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:35:11:2364916][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:35:11:2364916][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:35:40:2393946][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:35:40:2393947][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:35:40:2393947][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:35:45:2398909][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:35:45:2398909][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:35:45:2398909][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:35:51:2404853][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:35:51:2404853][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:35:51:2404853][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:35:59:2412826][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:35:59:2412827][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:35:59:2412827][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:36:03:2416762][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:36:03:2416762][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:36:03:2416762][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:36:12:2425727][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:36:12:2425727][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:36:12:2425727][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:36:16:2429649][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:36:16:2429649][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:36:16:2429649][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:36:18:2432583][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:36:18:2432583][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:36:18:2432584][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:36:36:2450567][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:36:36:2450567][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:36:36:2450567][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:36:42:2456569][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:36:42:2456569][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:36:42:2456569][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:37:22:2495690][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:37:22:2495690][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:37:22:2495691][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:37:32:2506628][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:37:32:2506628][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:37:32:2506628][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:37:45:2518640][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:37:45:2518641][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:37:45:2518641][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:38:37:2570858][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:38:37:2570858][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:38:37:2570858][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:38:50:2583888][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:38:50:2583888][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:38:50:2583888][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:39:13:2607343][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:39:13:2607343][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:39:13:2607343][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:41:00:2713778][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:41:00:2713778][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:41:00:2713779][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:41:06:2719777][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:41:06:2719777][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:41:06:2719777][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:41:30:2743865][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:41:30:2743865][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:41:30:2743865][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:41:35:2748847][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:41:35:2748847][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:41:35:2748847][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:41:43:2756861][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:41:43:2756861][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:41:43:2756862][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:42:01:2774910][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:42:01:2774910][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:42:01:2774910][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:42:27:2800975][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:42:27:2800976][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:42:27:2800976][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:42:54:2828057][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:42:54:2828057][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:42:54:2828057][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:43:03:2837036][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:43:03:2837037][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:43:03:2837037][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:43:12:2846042][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:43:12:2846042][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:43:12:2846042][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:43:17:2851023][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:43:17:2851023][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:43:17:2851023][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:43:26:2860025][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:43:26:2860026][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:43:26:2860026][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:43:58:2892119][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:43:58:2892119][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:43:58:2892119][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:44:06:2900104][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:44:06:2900104][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:44:06:2900104][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:44:34:2928203][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:44:34:2928204][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:44:34:2928204][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:44:39:2933180][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:44:39:2933180][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:44:39:2933180][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:44:44:2938147][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:44:44:2938148][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:44:44:2938148][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:44:51:2945155][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:44:51:2945155][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:44:51:2945155][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:45:04:2958177][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:45:04:2958177][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:45:04:2958178][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:45:08:2962147][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:45:08:2962147][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:45:08:2962147][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:45:40:2994168][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:45:40:2994168][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:45:40:2994168][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:46:05:3019183][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:46:05:3019183][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:46:05:3019183][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:46:12:3026178][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:46:12:3026178][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:46:12:3026178][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:46:36:3050224][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:46:36:3050224][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:46:36:3050224][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:46:42:3056212][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:46:42:3056212][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:46:42:3056212][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:46:52:3066244][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:46:52:3066244][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:46:52:3066244][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:46:54:3068190][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:46:54:3068190][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:46:54:3068190][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:00:3074187][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:00:3074187][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:00:3074187][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:06:3080152][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:06:3080152][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:06:3080152][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:12:3086150][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:12:3086150][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:12:3086150][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:23:3097130][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:23:3097130][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:23:3097130][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:36:3110145][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:36:3110145][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:36:3110145][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:41:3115107][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:41:3115108][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:41:3115108][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:47:44:3118016][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:47:44:3118016][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:47:44:3118016][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:48:55:3189240][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:48:55:3189240][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:48:55:3189240][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:49:00:3194155][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:49:00:3194156][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:49:00:3194156][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:49:19:3213113][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:49:19:3213113][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:49:19:3213113][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:49:47:3241116][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:49:47:3241116][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:49:47:3241116][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:49:54:3248014][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:49:54:3248014][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:49:54:3248014][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:49:59:3252987][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:49:59:3252988][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:49:59:3252988][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:50:06:3259920][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:50:06:3259920][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:50:06:3259920][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:52:23:3397401][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:52:23:3397401][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:52:23:3397401][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:53:49:3482698][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:53:49:3482698][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:53:49:3482698][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:53:53:3487592][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:53:53:3487592][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:53:53:3487592][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:55:15:3568836][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:55:15:3568837][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:55:15:3568837][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:56:42:3656213][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:56:42:3656214][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:56:42:3656214][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:57:02:3676609][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:57:02:3676609][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:57:02:3676609][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:57:10:3684529][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:57:10:3684529][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:57:10:3684529][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:57:14:3688421][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:57:14:3688422][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:57:14:3688422][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:57:51:3725472][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:57:51:3725472][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:57:51:3725472][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:58:02:3736433][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:58:02:3736433][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:58:02:3736433][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:58:48:3782532][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:58:48:3782532][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:58:48:3782532][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:58:56:3790452][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:58:56:3790453][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:58:56:3790453][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:59:06:3800402][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:59:06:3800403][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:59:06:3800403][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:59:12:3806325][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:59:12:3806325][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:59:12:3806325][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:59:15:3809430][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:59:15:3809430][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:59:15:3809431][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:59:23:3817385][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:59:23:3817385][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:59:23:3817385][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:59:51:3845410][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:59:51:3845410][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:59:51:3845410][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 14:59:59:3853348][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 14:59:59:3853348][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 14:59:59:3853348][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:00:31:3885391][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:00:31:3885391][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:00:31:3885391][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:00:36:3890299][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:00:36:3890299][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:00:36:3890299][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:00:50:3904235][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:00:50:3904235][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:00:50:3904235][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:00:53:3907118][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:00:53:3907118][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:00:53:3907118][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:00:58:3912031][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:00:58:3912031][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:00:58:3912031][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:01:05:3918941][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:01:05:3918941][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:01:05:3918941][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:01:14:3927901][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:01:14:3927901][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:01:14:3927901][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:01:19:3932799][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:01:19:3932799][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:01:19:3932799][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:01:21:3934963][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:01:21:3934964][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:01:21:3934964][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:02:12:3986091][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:02:12:3986091][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:02:12:3986091][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:03:28:4062393][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:03:28:4062393][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:03:28:4062393][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:03:33:4067298][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:03:33:4067298][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:03:33:4067298][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:03:50:4084279][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:03:50:4084279][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:03:50:4084279][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:03:56:4090198][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:03:56:4090199][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:03:56:4090199][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:04:52:765][main] INFO  team.spy.domain.board.BoardServiceT - Starting BoardServiceT on KwanghocBookPro with PID 16964 (started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:04:52:766][main] DEBUG team.spy.domain.board.BoardServiceT - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:04:52:767][main] INFO  team.spy.domain.board.BoardServiceT - The following profiles are active: local
+[2019-08-01 15:05:56:4210628][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:05:56:4210628][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:05:56:4210629][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:06:00:4214512][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:06:00:4214512][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:06:00:4214512][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:06:08:4222431][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:06:08:4222432][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:06:08:4222432][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:06:13:4227330][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:06:13:4227331][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:06:13:4227331][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:06:43:4257394][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:06:43:4257394][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:06:43:4257394][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:06:48:4262296][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:06:48:4262296][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:06:48:4262296][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:07:24:4298341][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16443 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:07:24:4298341][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:07:24:4298341][restartedMain] INFO  team.spy.Application - The following profiles are active: local
+[2019-08-01 15:07:25:818][main] INFO  team.spy.domain.board.BoardServiceT - Starting BoardServiceT on KwanghocBookPro with PID 16967 (started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:07:25:819][main] DEBUG team.spy.domain.board.BoardServiceT - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:07:25:819][main] INFO  team.spy.domain.board.BoardServiceT - The following profiles are active: local
+[2019-08-01 15:07:50:626][restartedMain] INFO  team.spy.Application - Starting Application on KwanghocBookPro with PID 16968 (/Users/kwanghoyeom/dev/spring/workspace/DoodleBoard/target/classes started by kwanghoyeom in /Users/kwanghoyeom/dev/spring/workspace/DoodleBoard)
+[2019-08-01 15:07:50:629][restartedMain] DEBUG team.spy.Application - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[2019-08-01 15:07:50:629][restartedMain] INFO  team.spy.Application - The following profiles are active: local

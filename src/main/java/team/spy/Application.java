@@ -1,5 +1,6 @@
 package team.spy;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -15,10 +17,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import team.spy.domain.User.dto.User;
 import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.User.resolve.UserArgumentResolver;
-import team.spy.domain.board.Board;
-import team.spy.domain.board.BoardRepository;
+import team.spy.domain.board.entity.Board;
+import team.spy.domain.board.entity.Calendar;
+import team.spy.domain.board.repository.BoardRepository;
 import team.spy.domain.enums.BoardType;
 
+//@EnableCaching
 @SpringBootApplication
 public class Application implements WebMvcConfigurer{
 
@@ -57,16 +61,20 @@ public class Application implements WebMvcConfigurer{
 					.createDate(LocalDateTime.now())
 					.build());
 			
+			IntStream.rangeClosed(1, 200).forEach(index -> {
 			
-			IntStream.rangeClosed(1, 200).forEach(index ->
-					boardRepository.save(Board.builder()
-							.title("title" + index)
-							.content("contents")
-							.boardType(BoardType.FREE)
-							.createDate(LocalDateTime.now())
-							.updateDate(LocalDateTime.now())
-							.user(user).build()
-							));
+			Board board = Board.builder()
+				.title("title" + index)
+				.content("contents")
+				.boardType(BoardType.FREE)
+				.createDate(LocalDateTime.now())
+				.updateDate(LocalDateTime.now())
+				.user(user.getIdx())
+				.build();
+			
+			board.setCalendar(new Calendar("index : " + index, "address", LocalDate.now(), LocalDate.now()));
+			boardRepository.save(board);
+			});
 		};
 	}
 	

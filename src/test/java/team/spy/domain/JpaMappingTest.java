@@ -10,8 +10,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import team.spy.domain.User.dto.User;
 import team.spy.domain.User.repository.UserRepository;
-import team.spy.domain.board.Board;
-import team.spy.domain.board.BoardRepository;
+import team.spy.domain.board.entity.Board;
+import team.spy.domain.board.repository.BoardRepository;
 import team.spy.domain.enums.BoardType;
 
 @RunWith(SpringRunner.class)
@@ -26,12 +26,13 @@ public class JpaMappingTest {
 	
 	@Autowired
 	BoardRepository boardRepository;
-
+	
+	protected User user;
 	
 	@Before
 	public void init()
 	{
-		User user = userRepository.save(User.builder()
+		user = userRepository.save(User.builder()
 				.nickname("ykh")
 				.password("ykh")
 				.email(email)
@@ -44,18 +45,7 @@ public class JpaMappingTest {
 				.boardType(BoardType.FREE)
 				.createDate(LocalDateTime.now())
 				.updateDate(LocalDateTime.now())
-				.user(user)
+				.user(user.getIdx())
 				.build());
 	}
-	
-//	@Test
-//	public void jpaTest()
-//	{
-//		User user = userRepository.findByEmail(email);
-//		assertThat(user.getNickname(), is("ykh"));
-//		assertThat(user.getPassword(), is("ykh"));
-//		
-//		Board board = boardRepository.findByUser(user);
-//		assertThat(board.getTitle(), is(boardName));	
-//	}
 }

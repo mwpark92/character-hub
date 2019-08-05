@@ -7,7 +7,7 @@ spring:
 #    password:
 #    driver-class-name: com.mysql.jdbc.Driver
   redis:
-    host: locahost
+    host: localhost
     port: 6379
   profiles: 
     active: local 
@@ -28,18 +28,23 @@ spring:
       client:
         registration:
           google:
-            client-id: 884915953449-qeufdpllfe4tml09k4s8lk51im7913fl.apps.googleusercontent.com
-            client-secret: K8-0YN-mkx3PiVOzIdSwvwMT
+            client-id: 1
+            client-secret: 1
           facebook:
-            client-id: 2424884084415109
-            client-secret: 3c29f4d653ee155a9d0e3d17b247dc55
+            client-id: 1
+            client-secret: 1
 
-
-            
+logging: 
+  level: 
+    root: warn
+  file: 
+    path: 
+    
+                
 custom: 
   oauth2: 
     kakao: 
-      client-id: abbb42f618313a2f16277a0e86ccbd68
+      client-id: 1
     naver: 
-      client-id: RXvwZFnYRD6v61LPJpRd
-      client-pw: 8O3ggp6r5p
+      client-id: 1
+      client-pw: 1

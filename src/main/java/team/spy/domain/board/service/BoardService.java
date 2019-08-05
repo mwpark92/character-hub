@@ -18,6 +18,7 @@ import team.spy.domain.enums.BoardType;
 
 /**
  * 일반적인 BoardService implement
+ * Meta규칙에 따라서 Entity 기본 CRUD와 Cumstom Query는 Method명의 Meta가 다
  * @author kwanghoyeom
  *
  */
@@ -32,70 +33,58 @@ public class BoardService {
 		this.boardRepository = boardRepository;
 	}
 	
+	/**
+	 * List Page에 출력될 목록 
+	 * @param pageable
+	 * @return
+	 */
 	public List<BoardSummary> findBoardList(Pageable pageable) {
-		// TODO Auto-generated method stub
 		pageable = PageRequest.of(pageable.getPageNumber() <= 0 ? 0 : pageable.getPageNumber() - 1, pageable.getPageSize());
 		
 		List<BoardSummary> boardList = new ArrayList<>();
-		
 		boardRepository.findBoardListByQuery(pageable).forEach(i -> {
-			
-			BoardSummary board = BoardSummary.builder()
-			.boardIdx((long)i[0])
-			.boardTitle((String)i[1])
-			.boardType((BoardType)i[2])
-			.boardCreateDate((LocalDateTime)i[3])
-			.boardUpdateDate((LocalDateTime)i[4])
-			.userIdx((long)i[5])
-			.userNickname((String)i[6])
-			.build();
-			
-			board.setHref("/boards/commons/" + i[0]);
+			BoardSummary board = new BoardSummary();
+			board.setBoardList(i);
 			boardList.add(board);
 		});
 		
-		
 		log.debug("listSize : {}", boardList.size());
-		boardList.stream().forEach(i -> log.debug("listValue : {}", i.toString() ));
+		boardList.forEach(i -> log.debug("listValue : {}", i.toString() ));
 		
 		return boardList;
 	}
 
+	/**
+	 * 구체적 페이지 
+	 * @param idx
+	 * @return
+	 */
 	public BoardSummary findBoardByIdx(Long idx) {
-		
-		BoardSummary boardSummary = null;
-		Object[] i = boardRepository.findBoardByBoardId(idx);
-		
-		boardSummary = BoardSummary.builder()
-				.boardIdx((long)i[0])
-				.boardTitle((String)i[1])
-				.boardContent((String)i[2])
-				.boardType((BoardType)i[3])
-				.boardCreateDate((LocalDateTime)i[4])
-				.boardUpdateDate((LocalDateTime)i[5])
-				.calendarHomepage((String)i[6])
-				.calendarAddress((String)i[7])
-				.calendarStartDate((LocalDate)i[8])
-				.calendarEndDate((LocalDate)i[9])
-				.userIdx((long)i[10])
-				.userNickname((String)i[11])
-				.build();
-		
+		BoardSummary boardSummary = new BoardSummary();
+		boardSummary.setBoard(boardRepository.findBoardByBoardId(idx).get(0));
 		return boardSummary;
 	}
-
+	
+	
+	public List<Board> readBoardList()
+	{
+		return boardRepository.findAll();
+	}
+	
+	public Board readBoardByBoardIdx(Long idx)
+	{
+		return boardRepository.findById(idx).orElse(null);
+	}
+	
 	public void generateBoard(Board board) {
-		// TODO Auto-generated method stub
 		boardRepository.save(board);
 	}
 
 	public void updateBoard(Board board) {
-		// TODO Auto-generated method stub
 		boardRepository.save(board);
 	}
 
 	public void deleteBoard(Long idx) {
-		// TODO Auto-generated method stub
 		Board originBoard = boardRepository.getOne(idx);
 		boardRepository.delete(originBoard);
 	}

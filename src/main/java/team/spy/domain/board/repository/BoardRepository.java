@@ -33,15 +33,14 @@ public interface BoardRepository extends JpaRepository<Board, Long>{
 			+ ", b.content "
 			+ ", b.createDate "
 			+ ", b.updateDate "
-			+ ", c.homepage "
-			+ ", c.address "
-			+ ", c.startDate "
-			+ ", c.endDate "
+			+ ", b.calendar.homepage "
+			+ ", b.calendar.address "
+			+ ", b.calendar.startDate "
+			+ ", b.calendar.endDate "
 			+ ", u.idx "
-			+ ", u.nickname"
+			+ ", u.nickname "
 			+ "from Board b "
 			+ "inner join User u on b.user = u.idx "
-			+ "inner join Calendar c on b.calendar = c.calendar_id"
 			+ "where b.idx = :idx")
-	Object[] findBoardByBoardId(@Param("idx") Long idx);
+	List<Object[]> findBoardByBoardId(@Param("idx") Long idx);
 }

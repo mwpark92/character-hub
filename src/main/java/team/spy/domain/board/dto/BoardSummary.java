@@ -9,10 +9,12 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import team.spy.domain.enums.BoardType;
 
 @Data
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class BoardSummary {
@@ -37,4 +39,33 @@ public class BoardSummary {
 	
 	// HATEOS
 	private String href;
+	
+	public void setBoard(Object[] object)
+	{
+		this.boardIdx  = (Long)object[0];
+		this.boardTitle = (String)object[1];
+		this.boardType = (BoardType)object[2];
+		this.boardContent = (String)object[3];
+		this.boardCreateDate = (LocalDateTime)object[4];
+		this.boardUpdateDate = (LocalDateTime)object[5];
+		this.calendarHomepage = (String)object[6];
+		this.calendarAddress = (String)object[7];
+		this.calendarStartDate = (LocalDate)object[8];
+		this.calendarEndDate = (LocalDate)object[9];
+		this.userIdx = (Long)object[10];
+		this.userNickname = (String)object[11];
+		this.href = "/boards/calendars/" + this.boardIdx;
+	}
+	
+	public void setBoardList(Object[] object)
+	{
+		this.boardIdx = (Long)object[0];
+		this.boardTitle = (String)object[1];
+		this.boardType = (BoardType)object[2];
+		this.boardCreateDate = (LocalDateTime)object[3];
+		this.boardUpdateDate = (LocalDateTime)object[4];
+		this.userIdx = (Long)object[5];
+		this.userNickname = (String) object[6];
+		this.href = "/'boards/calendars/" + this.boardIdx;
+	}
 }

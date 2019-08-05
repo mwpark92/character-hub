@@ -21,6 +21,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import team.spy.domain.JpaMappingTest;
+import team.spy.domain.board.dto.BoardSummary;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.entity.Calendar;
 import team.spy.domain.board.service.BoardService;
@@ -42,7 +43,7 @@ public class BoardServiceT extends JpaMappingTest{
 		when(pageable.getPageSize()).thenReturn(10);
 		
 		// when
-		List<Board> boardList = boardService.findBoardList(pageable);
+		List<BoardSummary> boardList = boardService.findBoardList(pageable);
 		
 		// then
 		assertThat(boardList, is(notNullValue()));
@@ -57,11 +58,11 @@ public class BoardServiceT extends JpaMappingTest{
 		when(pageable.getPageSize()).thenReturn(10);
 		
 		// when
-		Board board = boardService.findBoardByIdx(201L);
+		BoardSummary board = boardService.findBoardByIdx(201L);
 		
 		// then
 		assertThat(board, is(notNullValue()));
-		assertThat(board.getTitle(), is("Test"));
+		assertThat(board.getBoardTitle(), is("Test"));
 	}
 	
 	@Test
@@ -83,35 +84,33 @@ public class BoardServiceT extends JpaMappingTest{
 		
 		boardService.generateBoard(createBoard);
 		
-		
 		// Read All List
 		Pageable pageable = mock(Pageable.class);
 		when(pageable.getPageNumber()).thenReturn(1);
 		when(pageable.getPageSize()).thenReturn(300);
 		
-		List<Board> boardList = boardService.findBoardList(pageable);
+		List<BoardSummary> boardList = boardService.findBoardList(pageable);
 		
-		assertThat(boardList.get(boardList.size() - 2).getTitle(), is("CRUDBoardTest"));
+		assertThat(boardList.get(201).getBoardTitle(), is("CRUDBoardTest"));
 		
 		// Read One
-		Board readBoard = boardService.findBoardByIdx((long) (boardList.size() - 1));
+		Board readBoard = boardService.readBoardByBoardIdx(202L);
 		
 		assertThat(readBoard.getTitle(), is("CRUDBoardTest"));
 		
 		// Update
-		readBoard.setTitle("UDBoardTest");
+		readBoard.setTitle("Update");
 		boardService.updateBoard(readBoard);
 		
-		Board updateBoard = boardService.findBoardByIdx((long)(boardList.size() - 1));
-		assertThat(updateBoard.getTitle(), is("UDBoardTest"));
+		Board updateBoard = boardService.readBoardByBoardIdx(202L);
+		assertThat(updateBoard.getTitle(), is("Update"));
 		
 		// Delete
-		boardService.deleteBoard((long)(boardList.size() - 1));
+		boardService.deleteBoard(202L);
 		
-		Board deleteBoard = boardService.findBoardByIdx((long)(boardList.size() - 1));
+		Board deleteBoard = boardService.readBoardByBoardIdx(202L);
 		
-		assertThat(deleteBoard.getTitle(), is(nullValue()));
-		assertThat(deleteBoard.getUser(), is(nullValue()));
+		assertThat(deleteBoard, is(nullValue()));
 	}
 	
 }

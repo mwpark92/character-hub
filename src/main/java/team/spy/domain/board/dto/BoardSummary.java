@@ -1,5 +1,6 @@
 package team.spy.domain.board.dto;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,11 +14,16 @@ import lombok.NoArgsConstructor;
 import team.spy.domain.enums.BoardType;
 
 @Data
-@Builder
 @NoArgsConstructor
-@AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class BoardSummary {
+public class BoardSummary implements Serializable{
+	
+	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	// board
 	private Long boardIdx;
@@ -40,32 +46,31 @@ public class BoardSummary {
 	// HATEOS
 	private String href;
 	
-	public void setBoard(Object[] object)
-	{
-		this.boardIdx  = (Long)object[0];
-		this.boardTitle = (String)object[1];
-		this.boardType = (BoardType)object[2];
-		this.boardContent = (String)object[3];
-		this.boardCreateDate = (LocalDateTime)object[4];
-		this.boardUpdateDate = (LocalDateTime)object[5];
-		this.calendarHomepage = (String)object[6];
-		this.calendarAddress = (String)object[7];
-		this.calendarStartDate = (LocalDate)object[8];
-		this.calendarEndDate = (LocalDate)object[9];
-		this.userIdx = (Long)object[10];
-		this.userNickname = (String)object[11];
-		this.href = "/boards/calendars/" + this.boardIdx;
-	}
-	
-	public void setBoardList(Object[] object)
-	{
-		this.boardIdx = (Long)object[0];
-		this.boardTitle = (String)object[1];
-		this.boardType = (BoardType)object[2];
-		this.boardCreateDate = (LocalDateTime)object[3];
-		this.boardUpdateDate = (LocalDateTime)object[4];
-		this.userIdx = (Long)object[5];
-		this.userNickname = (String) object[6];
+	public BoardSummary(Long boardIdx, String boardTitle, String boardContent, BoardType boardType,
+			LocalDateTime boardCreateDate, LocalDateTime boardUpdateDate, String calendarHomepage,
+			String calendarAddress, LocalDate calendarStartDate, LocalDate calendarEndDate, Long userIdx, String userNickname) {
+
+		this.boardIdx = boardIdx;
+		this.boardTitle = boardTitle;
+		this.boardContent = boardContent;
+		this.boardType = boardType;
+		this.boardCreateDate = boardCreateDate;
+		this.boardUpdateDate = boardUpdateDate;
+		this.calendarHomepage = calendarHomepage;
+		this.calendarAddress = calendarAddress;
+		this.calendarStartDate = calendarStartDate;
+		this.calendarEndDate = calendarEndDate;
+		this.userIdx = userIdx;
+		this.userNickname = userNickname;
 		this.href = "/'boards/calendars/" + this.boardIdx;
 	}
+	
+	public BoardSummary(Long boardIdx, String boardTitle, BoardType boardType, 
+			LocalDateTime boardCreateDate, LocalDateTime boardUpdateDate, Long userIdx,
+			String userNickname
+			)
+	{
+		this(boardIdx, boardTitle, null, boardType, boardCreateDate, boardUpdateDate, 
+				null, null, null, null, userIdx, userNickname);
+	}	
 }

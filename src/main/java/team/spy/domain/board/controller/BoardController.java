@@ -13,7 +13,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,7 +29,7 @@ import team.spy.domain.board.service.BoardService;
 
 
 @RestController
-@RequestMapping(value = "/api/boards/Boards")
+@RequestMapping(value = "/api/boards/calendars")
 public class BoardController 
 {
 	BoardService boardService;
@@ -36,22 +40,24 @@ public class BoardController
 		this.boardService = boardService;
 		
 		httpHeaders = new HttpHeaders();
-		httpHeaders.set("Cache-Control", "max-age=3600");
+//		httpHeaders.set("Cache-Control", "max-age=3600");
 	}
 	 
-	
-	@RequestMapping(value = "/{idx}", method=RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "/{idx}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> getBoard(@PathVariable(value = "idx") Long idx)
 	{
 		BoardSummary board = boardService.findBoardByIdx(idx);
 		
+		if(board == null)
+			return ResponseEntity.notFound().build();
+		
 		return ResponseEntity.ok()
 				.headers(httpHeaders)
-				.eTag(Integer.toString(board.hashCode()))
+//				.eTag(Integer.toString(board.hashCode()))
 				.body(board);
 	}
 	
-	@RequestMapping(method=RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<?> getBoardBoardList(@PageableDefault Pageable pageable)
 	{
 		return ResponseEntity.ok()
@@ -60,25 +66,24 @@ public class BoardController
 	}
 	
 	
-	@RequestMapping(method=RequestMethod.POST)
+	@PostMapping
 	public ResponseEntity<?> postBoard(@RequestBody Board board)
 	{
 		boardService.generateBoard(board);
 		return new ResponseEntity<>("{}", HttpStatus.CREATED);
 	}
 	
-	@RequestMapping(value = "/{idx}", method=RequestMethod.PUT)
+	@PutMapping(value = "/{idx}")
 	public ResponseEntity<?> putBoard(@PathVariable(value = "idx") Long idx, @RequestBody Board board)
 	{
 		boardService.updateBoard(board);
 		return new ResponseEntity<>("{}", HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/{idx}", method=RequestMethod.DELETE)
-	public ResponseEntity<?> putBoard(@PathVariable(value = "idx") Long idx)
+	@DeleteMapping(value = "/{idx}")
+	public ResponseEntity<?> deleteBoard(@PathVariable(value = "idx") Long idx)
 	{
-		boardService.deleteBoard(idx);
-		return new ResponseEntity<>("{}", HttpStatus.OK);
+		return (boardService.deleteBoard(idx) ? ResponseEntity.ok().build() : ResponseEntity.notFound().build());
 	}
 	
 	private PagedResources<BoardSummary> findBoardList(Pageable pageable)

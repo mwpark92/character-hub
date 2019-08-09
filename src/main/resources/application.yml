@@ -28,17 +28,27 @@ spring:
       client:
         registration:
           google:
-            client-id: 1
-            client-secret: 1
+
           facebook:
             client-id: 1
             client-secret: 1
+  servlet: 
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 115MB
 
-logging: 
-  level: 
-    root: warn
-  file: 
-    path: 
+
+file:
+  image-upload-root-directory: static/images/
+  doc-upload-root-directory: static/docs/
+    
+#
+#logging: 
+#  level: 
+#    root: warn
+#  file: 
+#    path: 
     
                 
 custom: 

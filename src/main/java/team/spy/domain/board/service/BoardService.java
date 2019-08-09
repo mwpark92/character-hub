@@ -1,20 +1,17 @@
 package team.spy.domain.board.service;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import team.spy.domain.User.dto.User;
 import team.spy.domain.board.dto.BoardSummary;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.repository.BoardRepository;
-import team.spy.domain.enums.BoardType;
 
 /**
  * 일반적인 BoardService implement
@@ -40,16 +37,12 @@ public class BoardService {
 	 */
 	public List<BoardSummary> findBoardList(Pageable pageable) {
 		pageable = PageRequest.of(pageable.getPageNumber() <= 0 ? 0 : pageable.getPageNumber() - 1, pageable.getPageSize());
-		
-		List<BoardSummary> boardList = new ArrayList<>();
-		boardRepository.findBoardListByQuery(pageable).forEach(i -> {
-			BoardSummary board = new BoardSummary();
-			board.setBoardList(i);
-			boardList.add(board);
-		});
-		
+		List<BoardSummary> boardList = boardRepository.findBoardListByQuery(pageable);
+
 		log.debug("listSize : {}", boardList.size());
 		boardList.forEach(i -> log.debug("listValue : {}", i.toString() ));
+		
+		System.out.println("not cacheable!");
 		
 		return boardList;
 	}
@@ -59,12 +52,11 @@ public class BoardService {
 	 * @param idx
 	 * @return
 	 */
+
+    @Cacheable(cacheNames = "userCache", key = "#idx")
 	public BoardSummary findBoardByIdx(Long idx) {
-		BoardSummary boardSummary = new BoardSummary();
-		boardSummary.setBoard(boardRepository.findBoardByBoardId(idx).get(0));
-		return boardSummary;
+		return boardRepository.findBoardByBoardId(idx);
 	}
-	
 	
 	public List<Board> readBoardList()
 	{
@@ -76,17 +68,29 @@ public class BoardService {
 		return boardRepository.findById(idx).orElse(null);
 	}
 	
+	
+	// need finding img name and moving calendar directory
 	public void generateBoard(Board board) {
 		boardRepository.save(board);
 	}
 
+	// need finding img name and moving calendar directory
+	@CacheEvict(cacheNames = "userCache", key = "#idx")
 	public void updateBoard(Board board) {
 		boardRepository.save(board);
 	}
 
-	public void deleteBoard(Long idx) {
-		Board originBoard = boardRepository.getOne(idx);
-		boardRepository.delete(originBoard);
+	@CacheEvict(cacheNames = "userCache", key = "#idx")
+	public boolean deleteBoard(Long idx) {
+		
+		Board originBoard = boardRepository.findById(idx).orElse(null);
+		
+		if(originBoard != null) {
+			boardRepository.deleteById(idx);
+			return true;
+		}
+		
+		return false;
 	}
 	
 }

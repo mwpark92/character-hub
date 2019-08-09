@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -20,14 +21,20 @@ import team.spy.domain.User.resolve.UserArgumentResolver;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.entity.Calendar;
 import team.spy.domain.board.repository.BoardRepository;
+import team.spy.domain.common.properties.FileUploadProperties;
 import team.spy.domain.enums.BoardType;
 
-//@EnableCaching
+@EnableCaching
 @SpringBootApplication
+@EnableConfigurationProperties({
+    FileUploadProperties.class
+})
 public class Application implements WebMvcConfigurer{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		SpringApplication.run(Application.class, args);
+		// ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
 	}
 	
 	@Autowired
@@ -53,7 +60,6 @@ public class Application implements WebMvcConfigurer{
 		
 		
 		return (args) -> {
-			
 			User user = userRepository.save(User.builder()
 					.nickname("ykh")
 					.password("ykh")

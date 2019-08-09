@@ -3,7 +3,8 @@ package team.spy.domain.enums;
 public enum BoardType {
 
 	NOTICE("공지사항"),
-	FREE("자유게시판");
+	FREE("자유게시판"),
+	CALENDAR("캘린더");
 	
 	private String value;
 	

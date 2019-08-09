@@ -13,34 +13,20 @@ import team.spy.domain.board.entity.Board;
 
 public interface BoardRepository extends JpaRepository<Board, Long>{
 	@Query("select "
-			+ "b.idx "
-			+ ",b.title "
-			+ ",b.boardType "
-			+ ",b.createDate "
-			+ ",b.updateDate "
-			+ ",u.idx "
-			+ ",u.nickname "
+			+ " new team.spy.domain.board.dto.BoardSummary(b.idx, b.title, b.boardType, b.createDate, b.updateDate,"
+			+ " u.idx, u.nickname) "
 		   + "from Board b "
 		   + "inner join User u on b.user = u.idx"
 		  )
-// (@Param("idx") Long idx
-	List<Object[]> findBoardListByQuery(Pageable pageable);
+	List<BoardSummary> findBoardListByQuery(Pageable pageable);
 	
 	@Query("select "
-			+ "b.idx "
-			+ ", b.title "
-			+ ", b.boardType "
-			+ ", b.content "
-			+ ", b.createDate "
-			+ ", b.updateDate "
-			+ ", b.calendar.homepage "
-			+ ", b.calendar.address "
-			+ ", b.calendar.startDate "
-			+ ", b.calendar.endDate "
-			+ ", u.idx "
-			+ ", u.nickname "
+			+ " new team.spy.domain.board.dto.BoardSummary(b.idx, b.title, b.content, b.boardType, b.createDate, b.updateDate, "
+			+ " b.calendar.homepage, b.calendar.address, b.calendar.startDate, b.calendar.endDate, u.idx, u.nickname) "
 			+ "from Board b "
 			+ "inner join User u on b.user = u.idx "
 			+ "where b.idx = :idx")
-	List<Object[]> findBoardByBoardId(@Param("idx") Long idx);
+	BoardSummary findBoardByBoardId(@Param("idx") Long idx);
 }
+
+

@@ -41,7 +41,9 @@ spring:
 
 
 file:
-  upload-root-directory: static/images/calendars
+  image-upload-root-directory: static/images/
+  doc-upload-root-directory: static/docs/
+    
 #
 #logging: 
 #  level: 

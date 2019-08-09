@@ -21,13 +21,13 @@ import team.spy.domain.User.resolve.UserArgumentResolver;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.entity.Calendar;
 import team.spy.domain.board.repository.BoardRepository;
-import team.spy.domain.common.properties.ImageUploadProperties;
+import team.spy.domain.common.properties.FileUploadProperties;
 import team.spy.domain.enums.BoardType;
 
 @EnableCaching
 @SpringBootApplication
 @EnableConfigurationProperties({
-    ImageUploadProperties.class
+    FileUploadProperties.class
 })
 public class Application implements WebMvcConfigurer{
 

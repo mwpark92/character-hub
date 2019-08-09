@@ -8,8 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "file")
-public class ImageUploadProperties {
-
-	private String uploadRootDirectory;
-	
+public class FileUploadProperties {
+	private String imageUploadRootDirectory;
+	private String docUploadRootDirectory;
 }

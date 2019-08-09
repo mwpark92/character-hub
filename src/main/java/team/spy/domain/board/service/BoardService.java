@@ -1,23 +1,17 @@
 package team.spy.domain.board.service;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
-import team.spy.domain.User.dto.User;
 import team.spy.domain.board.dto.BoardSummary;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.repository.BoardRepository;
-import team.spy.domain.enums.BoardType;
 
 /**
  * 일반적인 BoardService implement
@@ -41,7 +35,6 @@ public class BoardService {
 	 * @param pageable
 	 * @return
 	 */
-
 	public List<BoardSummary> findBoardList(Pageable pageable) {
 		pageable = PageRequest.of(pageable.getPageNumber() <= 0 ? 0 : pageable.getPageNumber() - 1, pageable.getPageSize());
 		List<BoardSummary> boardList = boardRepository.findBoardListByQuery(pageable);
@@ -65,7 +58,6 @@ public class BoardService {
 		return boardRepository.findBoardByBoardId(idx);
 	}
 	
-	
 	public List<Board> readBoardList()
 	{
 		return boardRepository.findAll();
@@ -76,10 +68,14 @@ public class BoardService {
 		return boardRepository.findById(idx).orElse(null);
 	}
 	
+	
+	// need finding img name and moving calendar directory
 	public void generateBoard(Board board) {
 		boardRepository.save(board);
 	}
 
+	// need finding img name and moving calendar directory
+	@CacheEvict(cacheNames = "userCache", key = "#idx")
 	public void updateBoard(Board board) {
 		boardRepository.save(board);
 	}
@@ -94,7 +90,6 @@ public class BoardService {
 			return true;
 		}
 		
-		System.out.println("not exist originalBoard");
 		return false;
 	}
 	

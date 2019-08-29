@@ -6,7 +6,7 @@ public enum BoardType {
 	FREE("자유게시판"),
 	CALENDAR("캘린더");
 	
-	private String value;
+	private final String value;
 	
 	BoardType(String value)
 	{

@@ -1,10 +1,13 @@
 package team.spy.config;
 
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.configuration.EnableGlobalAuthentication;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -16,16 +19,11 @@ import org.springframework.security.oauth2.client.registration.InMemoryClientReg
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
 import org.springframework.security.web.csrf.CsrfFilter;
 import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
 import team.spy.domain.enums.SocialType;
 import team.spy.oauth2.CustomOAuth2Provider;
-
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -35,15 +33,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-		CorsConfiguration configuration = new CorsConfiguration();
+		final CorsConfiguration configuration = new CorsConfiguration();
 		configuration.addAllowedOrigin(CorsConfiguration.ALL);
 		configuration.addAllowedMethod(CorsConfiguration.ALL);
 		configuration.addAllowedHeader(CorsConfiguration.ALL);
 		
-		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", configuration);
 		
-		CharacterEncodingFilter filter = new CharacterEncodingFilter();
+		final CharacterEncodingFilter filter = new CharacterEncodingFilter();
         
 		http
 				.authorizeRequests()
@@ -83,7 +81,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	public ClientRegistrationRepository clientRegistrationRepository(OAuth2ClientProperties oAuth2ClientProperties, 
 						@Value("${custom.oauth2.kakao.client-id}") String kakaoClientId) {
         
-		List<ClientRegistration> registrations = oAuth2ClientProperties.getRegistration().keySet().stream()
+		final List<ClientRegistration> registrations = oAuth2ClientProperties.getRegistration().keySet().stream()
                 .map(client -> getRegistration(oAuth2ClientProperties, client))
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
@@ -101,7 +99,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	{
 		if("google".equals(client))
 		{
-			OAuth2ClientProperties.Registration registration = clientProperties.getRegistration().get("google");
+			final OAuth2ClientProperties.Registration registration = clientProperties.getRegistration().get("google");
 			return CommonOAuth2Provider.GOOGLE.getBuilder(client).clientId(registration.getClientId())
 																.clientSecret(registration.getClientSecret())
 																.scope("email", "profile")
@@ -110,7 +108,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		
 		if("facebook".equals(client))
 		{
-			OAuth2ClientProperties.Registration registration = clientProperties.getRegistration().get("facebook");
+			final OAuth2ClientProperties.Registration registration = clientProperties.getRegistration().get("facebook");
 			return CommonOAuth2Provider.GOOGLE.getBuilder(client).clientId(registration.getClientId())
 																.clientSecret(registration.getClientSecret())
 																.scope("email")

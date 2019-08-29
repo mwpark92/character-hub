@@ -9,7 +9,6 @@ import java.nio.file.StandardCopyOption;
 
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
-import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -31,11 +30,11 @@ public class ResourceUtils {
     
     public ResourceUtils(FileUploadProperties prop) 
     {
-        this.fileLocation = Paths.get(prop.getImageUploadRootDirectory() + "/temp").toAbsolutePath().normalize();
+        fileLocation = Paths.get(prop.getImageUploadRootDirectory() + "/temp").toAbsolutePath().normalize();
         
         try 
         {
-            Files.createDirectories(this.fileLocation);
+            Files.createDirectories(fileLocation);
         }catch(Exception e) 
         {
             throw new FileUploadException("파일을 업로드할 디렉토리를 생성하지 못했습니다.", e);
@@ -44,20 +43,22 @@ public class ResourceUtils {
 	
     public String saveResource(MultipartFile file) {
         
-    	String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+    	final String fileName = StringUtils.cleanPath(file.getOriginalFilename());
         
         try {
             // 파일명에 부적합 문자가 있는지 확인한다.
             if(fileName.contains(".."))
+            {
                 throw new FileUploadException("파일명에 부적합 문자가 포함되어 있습니다. " + fileName);
+            }
             
-            Path targetLocation = this.fileLocation.resolve(fileName);
+            final Path targetLocation = fileLocation.resolve(fileName);
             
             Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
             
             return fileName;
         }catch(Exception e) {
-            throw new FileUploadException("["+fileName+"] 파일 업로드에 실패하였습니다. 다시 시도하십시오.",e);
+            throw new FileUploadException('['+fileName+"] 파일 업로드에 실패하였습니다. 다시 시도하십시오.",e);
         }
         
     }
@@ -65,10 +66,10 @@ public class ResourceUtils {
     
     public Resource loadFileAsResource(String fileName) {
         try {
-            Path filePath = this.fileLocation.resolve(fileName).normalize();
-            Resource resource = new UrlResource(filePath.toUri());
-            
-            if(resource.exists()) {
+            final Path filePath = fileLocation.resolve(fileName).normalize();
+            final Resource resource = new UrlResource(filePath.toUri());
+
+            if(filePath.toFile().exists()) {
                 return resource;
             }else {
                 throw new FileDownloadException(fileName + " 파일을 찾을 수 없습니다.");
@@ -79,35 +80,30 @@ public class ResourceUtils {
     }
     
     
-	public boolean moveResource(String fileName, Path moveLocation)
+	public void moveResource(String fileName, Path moveLocation) throws IOException
     {
-    	Path filePath = this.fileLocation.resolve(fileName).normalize();
-    	Path movePath = this.fileLocation.resolve(moveLocation).resolve(fileName).normalize();
+    	final Path filePath = fileLocation.resolve(fileName).normalize();
+    	final Path movePath = fileLocation.resolve(moveLocation).resolve(fileName).normalize();
     	
-    	log.info("filePath : " + filePath.toString());
-    	log.info("movePath : " + movePath.toString());
-    	
-    	try {
-			Resource resource = new UrlResource(filePath.toUri());
-			if(resource.exists())
-			{
-				Files.createDirectories(movePath);
-				Files.copy(resource.getInputStream(), movePath, StandardCopyOption.REPLACE_EXISTING);
-				return resource.getFile().delete();
-			}
-			else 
-			{
-				return false;
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return false;
-		}
+    	log.info("currentPath : " + filePath);
+    	log.info("movePath : " + movePath);
+
+    	copyResource(filePath, movePath);
+        deleteResource(filePath);
+    }
+
+    public void copyResource(Path filePath, Path copyPath) throws IOException {
+        Files.createDirectories(copyPath);
+        Files.copy(filePath, copyPath, StandardCopyOption.REPLACE_EXISTING);
+
+    }
+
+    public void deleteResource(Path filePath) throws IOException {
+        Files.delete(filePath);
     }
 	
 	public Path getResourceRootDirectory()
 	{
-		return this.fileLocation;
+		return fileLocation;
 	}
 }

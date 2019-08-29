@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import team.spy.domain.User.dto.User;
+import team.spy.domain.User.entity.User;
 import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.repository.BoardRepository;

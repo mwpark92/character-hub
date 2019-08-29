@@ -3,12 +3,9 @@ package team.spy.domain.board.dto;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import team.spy.domain.enums.BoardType;
@@ -17,9 +14,7 @@ import team.spy.domain.enums.BoardType;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class BoardSummary implements Serializable{
-	
-	
-	
+
 	/**
 	 * 
 	 */

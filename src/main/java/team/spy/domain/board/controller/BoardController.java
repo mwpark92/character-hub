@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import team.spy.domain.board.dto.BoardSummary;
@@ -44,7 +43,7 @@ public class BoardController
 	}
 	 
 	@GetMapping(value = "/{idx}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<?> getBoard(@PathVariable(value = "idx") Long idx)
+	public ResponseEntity<BoardSummary> getBoard(@PathVariable(value = "idx") Long idx)
 	{
 		BoardSummary board = boardService.findBoardByIdx(idx);
 		
@@ -58,7 +57,7 @@ public class BoardController
 	}
 	
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<?> getBoardBoardList(@PageableDefault Pageable pageable)
+	public ResponseEntity<PagedResources<BoardSummary>> getBoardBoardList(@PageableDefault Pageable pageable)
 	{
 		return ResponseEntity.ok()
 		.headers(httpHeaders)
@@ -67,21 +66,21 @@ public class BoardController
 	
 	
 	@PostMapping
-	public ResponseEntity<?> postBoard(@RequestBody Board board)
+	public ResponseEntity<String> postBoard(@RequestBody Board board)
 	{
 		boardService.generateBoard(board);
 		return new ResponseEntity<>("{}", HttpStatus.CREATED);
 	}
 	
 	@PutMapping(value = "/{idx}")
-	public ResponseEntity<?> putBoard(@PathVariable(value = "idx") Long idx, @RequestBody Board board)
+	public ResponseEntity<String> putBoard(@PathVariable(value = "idx") Long idx, @RequestBody Board board)
 	{
 		boardService.updateBoard(board);
 		return new ResponseEntity<>("{}", HttpStatus.OK);
 	}
 	
 	@DeleteMapping(value = "/{idx}")
-	public ResponseEntity<?> deleteBoard(@PathVariable(value = "idx") Long idx)
+	public ResponseEntity<String> deleteBoard(@PathVariable(value = "idx") Long idx)
 	{
 		return (boardService.deleteBoard(idx) ? ResponseEntity.ok().build() : ResponseEntity.notFound().build());
 	}

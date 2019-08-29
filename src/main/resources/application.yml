@@ -28,7 +28,8 @@ spring:
       client:
         registration:
           google:
-
+            client-id: 884915953449-qeufdpllfe4tml09k4s8lk51im7913fl.apps.googleusercontent.com
+            client-secret: K8-0YN-mkx3PiVOzIdSwvwMT
           facebook:
             client-id: 1
             client-secret: 1

@@ -13,7 +13,6 @@ public class BoardImageProcess implements BoardProcess{
 	private final ResourceUtils resourceUtils;
 	
 	public BoardImageProcess(ResourceUtils resourceUtils) {
-		// TODO Auto-generated constructor stub
 		this.resourceUtils = resourceUtils;
 	}
 	
@@ -38,7 +37,7 @@ public class BoardImageProcess implements BoardProcess{
     
     public void bringFileFromTemp(Long id, String contents)
     {
-    	Path path = resourceUtils.getResourceRootDirectory().resolve("calendars/" + id).normalize();
+    	final Path path = resourceUtils.getResourceRootDirectory().resolve("calendars/" + id).normalize();
     	List<String> imageFileNames = findImageFileName(contents);
     	imageFileNames.stream().map(fileName -> resourceUtils.moveResource(fileName, path));
     }

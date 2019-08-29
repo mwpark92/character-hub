@@ -7,7 +7,7 @@ public enum SocialType {
 	KAKAO("kakao"),
 	NAVER("naver");
 	
-	private final String ROLE_PREFIX = "ROLE_";
+	private static final String ROLE_PREFIX = "ROLE_";
 	private String name;
 	
 	SocialType(String name)
@@ -17,14 +17,14 @@ public enum SocialType {
 	
 	public String getRoleType()
 	{
-		return this.ROLE_PREFIX + name.toUpperCase();
+		return ROLE_PREFIX + name.toUpperCase();
 	}
 	
 	public String getValue()
 	{
 		return this.name;
 	}
-	
+
 	public boolean equals(String authority)
 	{
 		return this.getValue().equals(authority);

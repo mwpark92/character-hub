@@ -1,4 +1,4 @@
-package team.spy.domain.User.dto;
+package team.spy.domain.User.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

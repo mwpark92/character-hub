@@ -10,6 +10,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -25,18 +26,19 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
 import team.spy.domain.User.annotation.SocialUser;
-import team.spy.domain.User.dto.User;
+import team.spy.domain.User.entity.User;
 import team.spy.domain.User.repository.UserRepository;
 import team.spy.domain.enums.SocialType;
 
 @Component
 public class UserArgumentResolver implements HandlerMethodArgumentResolver{
 
+    @Autowired
     private UserRepository userRepository;
 
-    public UserArgumentResolver(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+//    public UserArgumentResolver(UserRepository userRepository) {
+//        this.userRepository = userRepository;
+//    }
 
     @Override
     public boolean supportsParameter(MethodParameter parameter) {

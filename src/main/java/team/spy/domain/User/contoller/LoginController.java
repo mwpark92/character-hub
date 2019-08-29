@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import team.spy.domain.User.annotation.SocialUser;
-import team.spy.domain.User.dto.User;
+import team.spy.domain.User.entity.User;
 
 
 @RestController

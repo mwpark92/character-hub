@@ -3,7 +3,6 @@ package team.spy.domain.board.entity;
 import java.time.LocalDateTime;
 
 import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -58,16 +57,12 @@ public class Board{
 	private Long user;
 	
 	@Embedded
-	@AttributeOverrides({
-		@AttributeOverride(name="homepage", column = @Column(name = "homepage", table="T_Board_Calendar")),
-		@AttributeOverride(name="address", column = @Column(name = "address", table="T_Board_Calendar")),
-		@AttributeOverride(name="startDate", column = @Column(name = "startDate", table="T_Board_Calendar")),
-		@AttributeOverride(name="endDate", column = @Column(name = "endDate", table="T_Board_Calendar"))
-	})
+	@AttributeOverride(name="homepage", column = @Column(name = "homepage", table="T_Board_Calendar"))
+	@AttributeOverride(name="address", column = @Column(name = "address", table="T_Board_Calendar"))
+	@AttributeOverride(name="startDate", column = @Column(name = "startDate", table="T_Board_Calendar"))
+	@AttributeOverride(name="endDate", column = @Column(name = "endDate", table="T_Board_Calendar"))
 	private Calendar calendar;
-	
-	// private Tag tag;
-	
+
 	@Transient
 	private String href;
 	

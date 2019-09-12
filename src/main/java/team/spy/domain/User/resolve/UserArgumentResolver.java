@@ -1,12 +1,13 @@
 package team.spy.domain.User.resolve;
 
-import static team.spy.domain.enums.SocialType.FACEBOOK;
-import static team.spy.domain.enums.SocialType.GOOGLE;
-import static team.spy.domain.enums.SocialType.KAKAO;
+import static team.spy.enums.SocialType.FACEBOOK;
+import static team.spy.enums.SocialType.GOOGLE;
+import static team.spy.enums.SocialType.KAKAO;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpSession;
 
@@ -28,17 +29,13 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import team.spy.domain.User.annotation.SocialUser;
 import team.spy.domain.User.entity.User;
 import team.spy.domain.User.repository.UserRepository;
-import team.spy.domain.enums.SocialType;
+import team.spy.enums.SocialType;
 
 @Component
 public class UserArgumentResolver implements HandlerMethodArgumentResolver{
 
     @Autowired
     private UserRepository userRepository;
-
-//    public UserArgumentResolver(UserRepository userRepository) {
-//        this.userRepository = userRepository;
-//    }
 
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
@@ -57,21 +54,18 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver{
             try {
                 OAuth2AuthenticationToken authentication = (OAuth2AuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
                 Map<String, Object> map = authentication.getPrincipal().getAttributes();
-                
-                for(Map.Entry<String, Object> entry : map.entrySet())
-                {
-                	System.out.println(entry.getKey() + "  " + entry.getValue());
-                }
-                
+
+                map.entrySet().stream().map(i -> i.getKey() + " " + i.getValue()).collect(Collectors.joining(""));
+
                 System.out.println("auth : " + authentication.getAuthorizedClientRegistrationId());
                 
                 User convertUser = convertUser(authentication.getAuthorizedClientRegistrationId(), map);
                 
-                System.out.println(convertUser.toString());
-                
-                user = userRepository.findByPincipal(convertUser.getPincipal());
-                
-                if (user == null) { user = userRepository.save(convertUser); }
+                if (user == null) {
+                    user = userRepository.save(convertUser);
+                }
+
+                user = convertUser;
 
                 setRoleIfNotSame(user, authentication, map);
                 session.setAttribute("user", user);
@@ -84,8 +78,6 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver{
 
     private User convertUser(String authority, Map<String, Object> map) {
     	
-    	
-    	
         if(FACEBOOK.equals(authority)) return getModernUser(FACEBOOK, map);
         else if(GOOGLE.equals(authority)) return getModernUser(GOOGLE, map);
         else if(KAKAO.equals(authority)) return getKaKaoUser(map);
@@ -93,26 +85,23 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver{
     }
 
     private User getModernUser(SocialType socialType, Map<String, Object> map) {
+
         return User.builder()
                 .nickname(String.valueOf(map.get("name")))
                 .email(String.valueOf(map.get("email")))
-                .pincipal(String.valueOf(map.get("id")))
                 .socialType(socialType)
                 .createDate(LocalDateTime.now())
                 .build();
     }
 
     private User getKaKaoUser(Map<String, Object> map) {
-        
-    	System.out.println("In");
-    	
+
     	Map<String, String> propertyMap = (HashMap<String, String>) map.get("properties");
-        String id = (String) map.get("id");
-    	System.out.println("id : " + id);
+        long id = (long) map.get("id");
+
         return User.builder()
                 .nickname(propertyMap.get("nickname"))
                 .email(String.valueOf(map.get("kaccount_email")))
-                .pincipal(id)
                 .socialType(KAKAO)
                 .createDate(LocalDateTime.now())
                 .build();
@@ -120,7 +109,15 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver{
 
     private void setRoleIfNotSame(User user, OAuth2AuthenticationToken authentication, Map<String, Object> map) {
         if(!authentication.getAuthorities().contains(new SimpleGrantedAuthority(user.getSocialType().getRoleType()))) {
-            SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(map, "N/A", AuthorityUtils.createAuthorityList(user.getSocialType().getRoleType())));
+            SecurityContextHolder.getContext()
+                                 .setAuthentication(
+                                         new UsernamePasswordAuthenticationToken(
+                                                 map,
+                                                 "N/A",
+                                                 AuthorityUtils.createAuthorityList(user.getSocialType().getRoleType()
+                                                 )
+                                         )
+                                 );
         }
     }
 }

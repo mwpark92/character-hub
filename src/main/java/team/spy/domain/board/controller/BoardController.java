@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import team.spy.domain.board.dto.BoardSummary;
 import team.spy.domain.board.entity.Board;
+import team.spy.domain.board.entity.Calendar;
 import team.spy.domain.board.service.BoardService;
 
 
@@ -66,14 +67,14 @@ public class BoardController
 	
 	
 	@PostMapping
-	public ResponseEntity<String> postBoard(@RequestBody Board board)
+	public ResponseEntity<String> postBoard(@RequestBody Calendar board)
 	{
 		boardService.generateBoard(board);
 		return new ResponseEntity<>("{}", HttpStatus.CREATED);
 	}
 	
 	@PutMapping(value = "/{idx}")
-	public ResponseEntity<String> putBoard(@PathVariable(value = "idx") Long idx, @RequestBody Board board)
+	public ResponseEntity<String> putBoard(@PathVariable(value = "idx") Long idx, @RequestBody Calendar board)
 	{
 		boardService.updateBoard(board);
 		return new ResponseEntity<>("{}", HttpStatus.OK);

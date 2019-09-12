@@ -80,7 +80,7 @@ public class ResourceUtils {
     }
     
     
-	public void moveResource(String fileName, Path moveLocation) throws IOException
+	public void moveResource(String fileName, Path moveLocation)
     {
     	final Path filePath = fileLocation.resolve(fileName).normalize();
     	final Path movePath = fileLocation.resolve(moveLocation).resolve(fileName).normalize();
@@ -88,8 +88,12 @@ public class ResourceUtils {
     	log.info("currentPath : " + filePath);
     	log.info("movePath : " + movePath);
 
-    	copyResource(filePath, movePath);
-        deleteResource(filePath);
+        try {
+            copyResource(filePath, movePath);
+            deleteResource(filePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void copyResource(Path filePath, Path copyPath) throws IOException {

@@ -10,9 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import team.spy.domain.User.entity.User;
 import team.spy.domain.User.repository.UserRepository;
-import team.spy.domain.board.entity.Board;
-import team.spy.domain.board.repository.BoardRepository;
-import team.spy.domain.enums.BoardType;
+import team.spy.domain.board.repository.CalendarRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -25,7 +23,7 @@ public class JpaMappingTest {
 	UserRepository userRepository;
 	
 	@Autowired
-	BoardRepository boardRepository;
+	CalendarRepository boardRepository;
 	
 	protected User user;
 	
@@ -39,13 +37,13 @@ public class JpaMappingTest {
 				.createDate(LocalDateTime.now())
 				.build());
 		
-		boardRepository.save(Board.builder()
-				.title(boardName)
-				.content("contents")
-				.boardType(BoardType.FREE)
-				.createDate(LocalDateTime.now())
-				.updateDate(LocalDateTime.now())
-				.user(user.getIdx())
-				.build());
+//		boardRepository.save(Calen.builder()
+//				.title(boardName)
+//				.content("contents")
+//				.boardType(BoardType.FREE)
+//				.createDate(LocalDateTime.now())
+//				.updateDate(LocalDateTime.now())
+//				.user(user.getIdx())
+//				.build());
 	}
 }

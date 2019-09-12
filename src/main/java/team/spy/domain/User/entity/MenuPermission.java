@@ -1,45 +1,53 @@
 package team.spy.domain.User.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Generated;
 
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
-@ToString
+
 @Getter
+@Setter
+@EqualsAndHashCode(of = "no")
+@ToString
 @Entity
-@Table(name = "T_User_MenuPermission")
+@Table(name = "T_User_Permission")
 public class MenuPermission {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
-	private int no;
-	
+	private int idx;
+
+	@OneToOne(mappedBy = "role")
+	private User user;
+
+	@OneToMany(mappedBy = "menuPermission")
+	private List<Menu> menuPermissionList = new ArrayList<>();
+
 	@Column
 	private int permission;
 	
 	@Column
-	private String menucode;
+	private String menuCode;
 	
 	@Column
 	private String menuName;
 
-	@Builder
-	public MenuPermission(int permission, String menucode, String menuName)
-	{
-		this.permission = permission;
-		this.menucode = menucode;
-		this.menuName = menuName;
-	}
-	
+
 }

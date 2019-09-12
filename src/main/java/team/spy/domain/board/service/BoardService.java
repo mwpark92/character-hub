@@ -10,8 +10,9 @@ import org.springframework.stereotype.Service;
 import lombok.extern.slf4j.Slf4j;
 import team.spy.domain.board.dto.BoardSummary;
 import team.spy.domain.board.entity.Board;
+import team.spy.domain.board.entity.Calendar;
 import team.spy.domain.board.process.BoardImageProcess;
-import team.spy.domain.board.repository.BoardRepository;
+import team.spy.domain.board.repository.CalendarRepository;
 import team.spy.domain.common.service.ImageService;
 
 /**
@@ -24,13 +25,13 @@ import team.spy.domain.common.service.ImageService;
 @Service
 public class BoardService {
 	
-	private final BoardRepository boardRepository;
+	private final CalendarRepository calendarRepository;
 	
 	private final BoardImageProcess boardImageProcess;
 	
-	public BoardService(BoardRepository boardRepository, ImageService imageService)
+	public BoardService(CalendarRepository boardRepository, ImageService imageService)
 	{
-		this.boardRepository = boardRepository;
+		this.calendarRepository = boardRepository;
 		boardImageProcess = new BoardImageProcess(imageService);
 	}
 	
@@ -41,7 +42,8 @@ public class BoardService {
 	 */
 	public List<BoardSummary> findBoardList(Pageable pageable) {
 		pageable = PageRequest.of(pageable.getPageNumber() <= 0 ? 0 : pageable.getPageNumber() - 1, pageable.getPageSize());
-		return boardRepository.findBoardListByQuery(pageable);
+//		return boardRepository.findBoardListByQuery(pageable);
+		return null;
 	}
 
 	/**
@@ -52,40 +54,41 @@ public class BoardService {
 
     @Cacheable(cacheNames = "userCache", key = "#idx")
 	public BoardSummary findBoardByIdx(Long idx) {
-		return boardRepository.findBoardByBoardId(idx);
+//		return boardRepository.findBoardByBoardId(idx);
+		return null;
 	}
 	
-	public List<Board> readBoardList()
+	public List<Calendar> readBoardList()
 	{
-		return boardRepository.findAll();
+		return calendarRepository.findAll();
 	}
 	
-	public Board readBoardByBoardIdx(Long idx)
+	public Calendar readBoardByBoardIdx(Long idx)
 	{
-		return boardRepository.findById(idx).orElse(null);
+		return calendarRepository.findById(idx).orElse(null);
 	}
 	
 	
 	// need finding img name and moving calendar directory
-	public void generateBoard(Board board) {
-		
-		boardRepository.save(board);
+	public void generateBoard(Calendar board) {
+
+		calendarRepository.save(board);
 		boardImageProcess.bringFileFromTemp(board.getIdx(), board.getContent());
 	}
 
 	// need finding img name and moving calendar directory
 //	@CacheEvict(cacheNames = "userCache", key = "#idx")
-	public void updateBoard(Board board) {
-		boardRepository.save(board);
+	public void updateBoard(Calendar board) {
+		calendarRepository.save(board);
 	}
 
 //	@CacheEvict(cacheNames = "userCache", key = "#idx")
 	public boolean deleteBoard(Long idx) {
 		
-		final Board originBoard = boardRepository.findById(idx).orElse(null);
+		final Board originBoard = calendarRepository.findById(idx).orElse(null);
 		
 		if(originBoard != null) {
-			boardRepository.deleteById(idx);
+			calendarRepository.deleteById(idx);
 			return true;
 		}
 		

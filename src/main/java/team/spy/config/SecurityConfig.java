@@ -22,7 +22,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
-import team.spy.domain.enums.SocialType;
+import team.spy.enums.SocialType;
 import team.spy.oauth2.CustomOAuth2Provider;
 
 @Configuration

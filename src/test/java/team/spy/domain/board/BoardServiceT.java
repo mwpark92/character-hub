@@ -25,7 +25,7 @@ import team.spy.domain.board.dto.BoardSummary;
 import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.entity.Calendar;
 import team.spy.domain.board.service.BoardService;
-import team.spy.domain.enums.BoardType;
+import team.spy.enums.BoardType;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -69,20 +69,20 @@ public class BoardServiceT extends JpaMappingTest{
 	public void CRUDBoardT()
 	{
 		// Create
-		Board createBoard = Board.builder()
-						.user(user.getIdx())
-						.title("CRUDBoardTest")
-						.content("Hello")
-						.boardType(BoardType.NOTICE)
-						.createDate(LocalDateTime.now())
-						.updateDate(null)
-						.build();
-		
-		createBoard.setCalendar(new Calendar(null, null, 
-				LocalDate.now().with(TemporalAdjusters.next(DayOfWeek.MONDAY)),
-				LocalDate.now().with(TemporalAdjusters.next(DayOfWeek.FRIDAY))));
-		
-		boardService.generateBoard(createBoard);
+
+		final Calendar board = new Calendar();
+		board.setTitle("title");
+		board.setContent("contents");
+		board.setBoardType(BoardType.CALENDAR);
+		board.setCreateDate(LocalDateTime.now());
+		board.setUpdateDate(LocalDateTime.now());
+		board.setUser(user.getIdx());
+		board.setHomepage("index");
+		board.setAddress("address");
+		board.setStartDate(LocalDate.now());
+		board.setEndDate(LocalDate.now().plusDays(5));
+
+		boardService.generateBoard(board);
 		
 		// Read All List
 		Pageable pageable = mock(Pageable.class);
@@ -94,7 +94,7 @@ public class BoardServiceT extends JpaMappingTest{
 		assertThat(boardList.get(201).getBoardTitle(), is("CRUDBoardTest"));
 		
 		// Read One
-		Board readBoard = boardService.readBoardByBoardIdx(202L);
+		Calendar readBoard = boardService.readBoardByBoardIdx(202L);
 		
 		assertThat(readBoard.getTitle(), is("CRUDBoardTest"));
 		

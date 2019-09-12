@@ -13,11 +13,10 @@ import org.springframework.context.annotation.Bean;
 
 import team.spy.domain.User.entity.User;
 import team.spy.domain.User.repository.UserRepository;
-import team.spy.domain.board.entity.Board;
 import team.spy.domain.board.entity.Calendar;
-import team.spy.domain.board.repository.BoardRepository;
+import team.spy.domain.board.repository.CalendarRepository;
 import team.spy.domain.common.properties.FileUploadProperties;
-import team.spy.domain.enums.BoardType;
+import team.spy.enums.BoardType;
 
 @EnableCaching
 @SpringBootApplication
@@ -30,7 +29,7 @@ public class Application{
 	}
 
 	@Bean
-	public CommandLineRunner runner(UserRepository userRepository, BoardRepository boardRepository)
+	public CommandLineRunner runner(UserRepository userRepository, CalendarRepository boardRepository)
 	{
 		return args -> {
 			final User user = userRepository.save(User.builder()
@@ -42,16 +41,18 @@ public class Application{
 
 			IntStream.rangeClosed(1, 200).forEach(index -> {
 
-				final Board board = Board.builder()
-						.title("title" + index)
-						.content("contents")
-						.boardType(BoardType.FREE)
-						.createDate(LocalDateTime.now())
-						.updateDate(LocalDateTime.now())
-						.user(user.getIdx())
-						.build();
+				Calendar board = new Calendar();
+				board.setTitle("title");
+				board.setContent("contents");
+				board.setBoardType(BoardType.CALENDAR);
+				board.setCreateDate(LocalDateTime.now());
+				board.setUpdateDate(LocalDateTime.now());
+				board.setUser(user.getIdx());
+				board.setHomepage("index : " + index);
+				board.setAddress("address");
+				board.setStartDate(LocalDate.now());
+				board.setEndDate(LocalDate.now().plusDays(5));
 
-				board.setCalendar(new Calendar("index : " + index, "address", LocalDate.now(), LocalDate.now()));
 				boardRepository.save(board);
 			});
 		};

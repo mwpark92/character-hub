@@ -38,7 +38,7 @@ public class BoardImageProcess implements BoardProcess{
     public void bringFileFromTemp(Long id, String contents)
     {
     	final Path path = resourceUtils.getResourceRootDirectory().resolve("calendars/" + id).normalize();
-    	List<String> imageFileNames = findImageFileName(contents);
-    	imageFileNames.stream().map(fileName -> resourceUtils.moveResource(fileName, path));
+    	final List<String> imageFileNames = findImageFileName(contents);
+    	imageFileNames.forEach(fileName -> resourceUtils.moveResource(fileName, path));
     }
 }

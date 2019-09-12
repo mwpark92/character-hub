@@ -8,16 +8,13 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import team.spy.domain.enums.BoardType;
+import team.spy.enums.BoardType;
 
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class BoardSummary implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
 	// board
@@ -57,7 +54,7 @@ public class BoardSummary implements Serializable{
 		this.calendarEndDate = calendarEndDate;
 		this.userIdx = userIdx;
 		this.userNickname = userNickname;
-		this.href = "/'boards/calendars/" + this.boardIdx;
+		href = "/'boards/calendars/" + this.boardIdx;
 	}
 	
 	public BoardSummary(Long boardIdx, String boardTitle, BoardType boardType, 

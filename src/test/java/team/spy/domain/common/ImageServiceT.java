@@ -35,11 +35,7 @@ public class ImageServiceT {
 		System.out.println("path : " + movePath);
 		
 		// when
-		boolean isSuccess = imageService.moveResource(fileName, movePath);
-		
-		// then
-		assertThat(isSuccess, is(true));
-	
+		imageService.moveResource(fileName, movePath);
 	}
 	
 	

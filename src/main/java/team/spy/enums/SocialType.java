@@ -1,4 +1,4 @@
-package team.spy.domain.enums;
+package team.spy.enums;
 
 public enum SocialType {
 

@@ -9,44 +9,52 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import team.spy.domain.enums.SocialType;
+import lombok.Setter;
+import team.spy.enums.SocialType;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@Data
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode(of = "idx")
 @Entity
 @Table(name = "T_User")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User{
 
 	@Id
 	@Column
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idx;
-	
+
 	@Column
 	private String nickname;
 	
 	@Column
-	private String userid;
+	private String userId;
 	
 	@Column
-	@JsonIgnore
 	private String password;
-	
+
 	@Column
 	private String email;
-	
-	@Column
-	private String pincipal;
-	
+
+	@OneToOne
+	@JoinColumn(name = "ROLE_ID")
+	private MenuPermission role;
+
 	@Column
 	@Enumerated(EnumType.STRING)
 	private SocialType socialType;
@@ -56,23 +64,5 @@ public class User{
 	
 	@Column
 	private LocalDateTime updateDate;
-	
-	@Column
-	private Integer permission;
-	
-	
-	@Builder
-	public User(String nickname, Integer permission, String userid, String password, String email, LocalDateTime createDate, 
-			LocalDateTime updateDate, SocialType socialType, String pincipal)
-	{
-		this.permission = permission;
-		this.nickname = nickname;
-		this.userid = userid;
-		this.password = password;
-		this.email = email;
-		this.createDate = createDate;
-		this.updateDate = updateDate;
-		this.pincipal = pincipal;
-		this.socialType = socialType;
-	}
+
 }

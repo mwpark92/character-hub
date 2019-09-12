@@ -3,21 +3,21 @@ package team.spy.domain.board.entity;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
-import javax.persistence.Embeddable;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-
-@Data
-@Embeddable
-@NoArgsConstructor
+@Getter
+@Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Calendar{
-	
+@DiscriminatorValue("Calendar")
+@Entity
+public class Calendar extends Board{
+
 	@Column
 	private String homepage;
 	
@@ -29,15 +29,6 @@ public class Calendar{
 	
 	@Column
 	private LocalDate endDate;
-
-	@Builder
-	public Calendar(String homepage, String address, LocalDate startDate, LocalDate endDate)
-	{
-		this.homepage = homepage;
-		this.address = address;
-		this.startDate = startDate;
-		this.endDate = endDate;
-	}
 	
 	public void update(Calendar calendarBoard)
 	{
